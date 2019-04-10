@@ -10,7 +10,10 @@ Untuk pertama kali adalah tentunya membuat terlebih web project terlebih dahulu.
 
    ![](/assets/springinitializr.png)
 
-3. Setelah itu ![](/assets/btn-generate-project.png) seperti terlihat button dibawah form dan enter  
-4. 
-.
+3. Setelah itu ![](/assets/btn-generate-project.png) seperti terlihat button dibawah form dan **enter**
+
+4. **Extract** file rar Generate Project ke dalam _**project workspace**_ anda.
+5. Buka file yang telah di extract menggunakan IDE Eclipse.
+
+
 
