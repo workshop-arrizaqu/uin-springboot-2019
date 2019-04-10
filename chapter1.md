@@ -26,9 +26,13 @@ Setelah melakukan generate Project dengan spring boot strater maka, selanjutknya
 
 ## Menjalankan Program
 
-untuk menjalankan program, maka banyak cara dalam hal ini secara instance bisa dilakukan dengan menggunakan cara berikut ini :
+Jalan program dengan banyak cara dalam hal ini secara cepat bisa dilakukan dengan menggunakan cara :
 
+```
+Klik kanan Project -> Pilih "RUN AS" -> pilih "Spring Boot App"
+```
 
+## ![](/assets/run-as)
 
 ## Koneksi Database
 
