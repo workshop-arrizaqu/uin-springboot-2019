@@ -8,11 +8,9 @@ Spring Tool Suit \(STS\) Latest Version
 
 ## Database Server
 
-MySql / XAMPP
+MySql \(simple instal dengan : XAMPP\)
 
 ## Operating System
 
 Windows, Linux, \(Rekomendasi : Windows\)
-
-
 
