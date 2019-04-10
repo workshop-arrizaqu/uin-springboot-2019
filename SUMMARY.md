@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
-* [System Requirment](system-requirment.md)
+* [Pengenalan](README.md)
+* [Kebutuhan System](system-requirment.md)
 * [First Chapter](chapter1.md)
 
