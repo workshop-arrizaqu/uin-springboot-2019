@@ -3,15 +3,15 @@
 Untuk pertama kali adalah tentunya membuat terlebih web project terlebih dahulu.sebagai berikut.
 
 1. kunjungi [https://start.spring.io/](https://start.spring.io/)
-2. pilih dependency yang standart yaitu :
-   1. Web
-   2. JPA
-   3. MySQL
-   4. Thymeleaf
+2. Pilih Dependency standart diantaranya adalah :
+   1. JPA
+   2. MySQL
+   3. Thymeleaf
 
-![](/assets/springinitializr.png)
+   ![](/assets/springinitializr.png)
+3. sdfsdf
+4. 
 
-1. sff
 
 .
 
