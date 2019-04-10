@@ -14,3 +14,7 @@ MySql \(simple instal dengan : XAMPP\)
 
 Windows, Linux, \(Rekomendasi : Windows\)
 
+## JDK
+
+JDK 1.8 atau diatasnya.
+
