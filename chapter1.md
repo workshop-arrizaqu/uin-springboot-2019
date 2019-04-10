@@ -32,5 +32,3 @@ Setelah melakukan generate Project dengan spring boot strater maka, selanjutknya
 
 Dengan hadirnya dependency JPA, maka ketika project
 
-
-
