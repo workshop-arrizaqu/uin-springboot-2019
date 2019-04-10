@@ -1,6 +1,4 @@
-# Spring Framework with Spring-boot
+# LAB -Java SpringBoot
 
-Spring boot adalah sebuah mekanisme yang dibuat untuk memudahkan sahabat dalam melakkukan pekerjakan system informasi ketika menggunakan Spring sebagai kerangka kerja penyelesain project.
-
- 
+Berikut ini adalah Lab Praktek untuk pembuatan web aplikasi sederhana menggunakan Spring boot.
 
