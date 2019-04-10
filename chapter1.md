@@ -20,7 +20,7 @@ Setelah melakukan generate Project dengan spring boot strater maka, selanjutknya
 
 1. **Extract** file rar Generate Project ke dalam _**project workspace**_ anda.
 
-2. Buka file yang telah di extract menggunakan IDE Eclipse / STS.
+2. Buka dan **import** file project yang telah di **extract** menggunakan IDE Eclipse / STS.
 
 
 
