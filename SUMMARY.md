@@ -2,5 +2,5 @@
 
 * [Pengenalan](README.md)
 * [Kebutuhan System](system-requirment.md)
-* [First Chapter](chapter1.md)
+* [Hello World](chapter1.md)
 
