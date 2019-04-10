@@ -20,11 +20,17 @@ Setelah melakukan generate Project dengan spring boot strater maka, selanjutknya
 
 1. **Extract** file rar Generate Project ke dalam _**project workspace**_ anda.
 
-2. Buka dan **import** file project yang telah di **extract** menggunakan IDE Eclipse / STS, yaitu : **File -&gt; Import **dan ketikan wizard "Maven" dan pilih Existing Maven Project, dan terakhir adalah cari file project yang telah di extract sebelumnya. 
+2. Buka dan **import** file project yang telah di **extract** menggunakan IDE Eclipse / STS, yaitu : **File -&gt; Import **dan ketikan wizard "Maven" dan pilih Existing Maven Project, dan terakhir adalah cari file project yang telah di extract sebelumnya.
 
    ![](/assets/import-project.png)
 
-3. fasdf
+## Menjalankan Program
+
+
+
+## Koneksi Database
+
+Dengan hadirnya dependency JPA, maka ketika project
 
 
 
