@@ -14,13 +14,17 @@ Untuk pertama kali adalah tentunya membuat terlebih web project terlebih dahulu.
 
 3. Setelah itu ![](/assets/btn-generate-project.png) seperti terlihat button dibawah form dan **enter**
 
-## Open File Project
+## Import File Project
 
 Setelah melakukan generate Project dengan spring boot strater maka, selanjutknya adalah :
 
 1. **Extract** file rar Generate Project ke dalam _**project workspace**_ anda.
 
-2. Buka dan **import** file project yang telah di **extract** menggunakan IDE Eclipse / STS.
+2. Buka dan **import** file project yang telah di **extract** menggunakan IDE Eclipse / STS, yaitu : **File -&gt; Import **dan ketikan wizard "Maven" dan pilih Existing Maven Project, dan terakhir adalah cari file project yang telah di extract sebelumnya. 
+
+   ![](/assets/import-project.png)
+
+3. fasdf
 
 
 
