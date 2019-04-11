@@ -7,5 +7,4 @@
 * [Quiz Logika](quiz-logika.md)
 * [Jawaban Quiz](quiz-logika/jawaban-quiz.md)
 * [Spring MVC](spring-mvc.md)
-  * [Simple CRUD](spring-mvc/simple-crud.md)
 
