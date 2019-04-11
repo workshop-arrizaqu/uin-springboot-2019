@@ -39,7 +39,8 @@
       @GetMapping
       @ResponseBody
       public String index(@RequestParam("n") int n) {
-          String data = Arrays.toString(this.getFibonachi(n));
+          int[] dataFib = this.getFibonachi(n);
+          String hasil = Arrays.toString(dataFib);
           return data;
       }
 
