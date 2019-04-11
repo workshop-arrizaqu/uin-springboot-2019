@@ -18,3 +18,9 @@ Windows, Linux, \(Rekomendasi : Windows\)
 
 JDK 1.8 atau diatasnya.
 
+## Aplikasi Pendukung
+
+XAMPP
+
+
+
