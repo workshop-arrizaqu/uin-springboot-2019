@@ -7,4 +7,7 @@
 * [Quiz Logika](quiz-logika.md)
 * [Jawaban Quiz](quiz-logika/jawaban-quiz.md)
 * [Spring MVC](spring-mvc.md)
+* Bootstrap Layout
+* Data Form
+* Bootstrap Layout
 
