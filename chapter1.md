@@ -41,11 +41,17 @@ Dengan hadirnya dependency JPA, maka ketika project dijalankan maka biasanya aka
 1. Jalankan service database, untuk mempercepatkan jalankan XAMPP yang sudah terinstall, dan jalankan MySQL.
    ![](/assets/service-xampp)
 2. Create database dengan nama "sb-uin-jakarta"
+   ```command
+   C:\Users\arrizaqu>cd c:/xampp/mysql/bin
+   c:\xampp\mysql\bin>mysql -u root -p
+   Enter password:
+   mysql> create database sb_uin_jakarta;
+   ```
 3. buka file _**src -&gt; main -&gt; resources -&gt; application.properties**_ dan tuilis script sebagai berikut : 
-   ```java
+   ```xml
    # koneksi Database MySQL
    spring.jpa.hibernate.ddl-auto=validate
-   spring.datasource.url=jdbc:mysql://localhost:3306/sb-uin-jakarta
+   spring.datasource.url=jdbc:mysql://localhost:3306/sb_uin_jakarta
    spring.datasource.username=root
    spring.datasource.password=
    ```
