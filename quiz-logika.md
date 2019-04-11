@@ -20,6 +20,43 @@
   ```
 * ### Controller
 
+  ```java
+  package com.uinjakarta.smartweb.controller;
+
+  import java.io.ObjectInputStream.GetField;
+  import java.util.Arrays;
+
+  import org.springframework.stereotype.Controller;
+  import org.springframework.web.bind.annotation.GetMapping;
+  import org.springframework.web.bind.annotation.RequestMapping;
+  import org.springframework.web.bind.annotation.RequestParam;
+  import org.springframework.web.bind.annotation.ResponseBody;
+
+  @Controller
+  @RequestMapping("/quiz")
+  public class Quiz {
+	
+  	@GetMapping
+  	@ResponseBody
+  	public String index(@RequestParam("n") int n) {
+  		String data = Arrays.toString(this.getFibonachi(n));
+  		return data;
+  	}
+	
+  	public int[] getFibonachi(int n) {
+  		int[] data = new int[n];
+  		data[0] = 1;
+  		data[1] = 1;
+  		for(int i = 2; i < n; i++) {
+  			data[i] = data[i - 1] + data[i - 2];
+  		}
+		
+  		return data;
+  	}
+
+  }
+  ```
+
 ## 2. Quiz 2 \(Lanjutkan\)
 
 > **Buatlah hasil output 2 digit dengan aturan sebagai berikut : **
