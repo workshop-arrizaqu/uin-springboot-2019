@@ -72,7 +72,7 @@
 >
 > ```
 
-### Lengkapi penyelesain berikut ini : 
+### Lengkapi penyelesain berikut ini :
 
 ```java
 package com.uinjakarta.smartweb.controller;
@@ -89,34 +89,33 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("/quiz")
 public class Quiz {
-	
-	@GetMapping
-	@ResponseBody
-	public String index(@RequestParam("n") int n) {
-		int[] dataFib = this.getFibonachi(n);
-		//String hasil = Arrays.toString(dataFib);
-		//modify your code
-		return hasil;
-	}
-	
-	public int[] getFibonachi(int n) {
-		int[] data = new int[n];
-		data[0] = 1;
-		data[1] = 1;
-		for(int i = 2; i < n; i++) {
-			data[i] = data[i - 1] + data[i - 2];
-		}
-		
-		return data;
-	}
-	
-	public String[] getMaxValues(int[] data) {
-		//complete code here
-		//return null;
-	}
+
+    @GetMapping
+    @ResponseBody
+    public String index(@RequestParam("n") int n) {
+        int[] dataFib = this.getFibonachi(n);
+        //String hasil = Arrays.toString(dataFib);
+        //complete your code here !!!
+        return hasil;
+    }
+
+    public int[] getFibonachi(int n) {
+        int[] data = new int[n];
+        data[0] = 1;
+        data[1] = 1;
+        for(int i = 2; i < n; i++) {
+            data[i] = data[i - 1] + data[i - 2];
+        }
+
+        return data;
+    }
+
+    public String[] getMaxValues(int[] data) {
+        //complete code here !!!
+        //return null;
+    }
 
 }
-
 ```
 
 
