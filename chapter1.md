@@ -38,7 +38,10 @@ Klik kanan Project -> Pilih "RUN AS" -> pilih "Spring Boot App"
 
 Dengan hadirnya dependency JPA, maka ketika project dijalankan maka biasanya akan error karena aplikasi harus memiliki koneksi dengan database, untuk kali ini menggunakan mysql, sebagai berikut:
 
-1. buka file _**src -&gt; main -&gt; resources -&gt; application.properties**_ dan tuilis script sebagai berikut : 
+1. Jalankan service database, untuk mempercepatkan jalankan XAMPP yang sudah terinstall, dan jalankan MySQL.
+   ![](/assets/service-xampp)
+2. Create database dengan nama "sb-uin-jakarta"
+3. buka file _**src -&gt; main -&gt; resources -&gt; application.properties**_ dan tuilis script sebagai berikut : 
    ```java
    # koneksi Database MySQL
    spring.jpa.hibernate.ddl-auto=validate
@@ -46,8 +49,6 @@ Dengan hadirnya dependency JPA, maka ketika project dijalankan maka biasanya aka
    spring.datasource.username=root
    spring.datasource.password=
    ```
-2. sfdsdf
-3. fsdf
-
+4. 
 
 
