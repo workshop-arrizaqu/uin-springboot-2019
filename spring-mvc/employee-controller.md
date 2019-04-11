@@ -1,4 +1,4 @@
-# Membuat Employe Controller
+# Employe Controller
 
 ## 
 
