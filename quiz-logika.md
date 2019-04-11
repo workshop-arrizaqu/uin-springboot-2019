@@ -94,9 +94,9 @@ public class Quiz {
     @ResponseBody
     public String index(@RequestParam("n") int n) {
         int[] dataFib = this.getFibonachi(n);
-        //String hasil = Arrays.toString(dataFib);
-        //complete your code here !!!
-        return hasil;
+	int[] dataMax = this.getMaxValues(dataFib);
+	String hasil = Arrays.toString(dataMax);
+	return hasil;
     }
 
     public int[] getFibonachi(int n) {
