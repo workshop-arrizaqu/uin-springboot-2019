@@ -9,9 +9,10 @@ Kerangka kerja Spring Web MVC menyediakan arsitektur Model-View-Controller \(MVC
 
 ## Simple CRUD \(Create Read Update Delete\)
 
-### Employee
+### Table : Employee
 
-* 
+![](/assets/table-employee)
+
 
 
 
