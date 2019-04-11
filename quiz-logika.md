@@ -1,6 +1,6 @@
 # Quiz Logika
 
-## 1. Quiz 1 \(Guide\)
+## Guidance Quiz
 
 > **Menghasilkan bilangan Fibonachi dengan inputan N**
 
@@ -58,7 +58,7 @@
   }
   ```
 
-## 2. Quiz 2 \(Lanjutkan\)
+## Quiz
 
 > **Buatlah hasil output 2 digit dengan aturan sebagai berikut : **
 >
@@ -66,10 +66,18 @@
 >
 > **Digit 2 -&gt; menunjukkan Total Jumlah  jika hasil Quiz 1 dijumlahkan. **
 >
-> contoh:
+>
 >
 > ```
->
+> Contoh : 1
+>     * input : 3 
+>     * Fibonachi : [1, 1, 2]
+>     * hasil : [3, 4]
+>     
+> Contoh : 2 
+>     * input : 5
+>     * Fibonachi : [1, 1, 2, 3, 5]
+>     * hasil : [5, 12]
 > ```
 
 ### Lengkapi penyelesain berikut ini :
