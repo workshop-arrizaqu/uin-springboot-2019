@@ -55,6 +55,6 @@ Dengan hadirnya dependency JPA, maka ketika project dijalankan maka biasanya aka
    spring.datasource.username=root
    spring.datasource.password=
    ```
-4. 
+
 
 
