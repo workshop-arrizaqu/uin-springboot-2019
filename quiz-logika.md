@@ -41,7 +41,7 @@
       public String index(@RequestParam("n") int n) {
           int[] dataFib = this.getFibonachi(n);
           String hasil = Arrays.toString(dataFib);
-          return data;
+          return hasil;
       }
 
       public int[] getFibonachi(int n) {
