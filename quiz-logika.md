@@ -96,7 +96,7 @@ public class Quiz {
         int[] dataFib = this.getFibonachi(n);
         int[] dataMax = this.getMaxValues(dataFib);
         String hasil = Arrays.toString(dataMax);
-        
+
         return hasil;
     }
 
@@ -111,9 +111,8 @@ public class Quiz {
         return data;
     }
 
-    public String[] getMaxValues(int[] data) {
-        //complete code here !!!
-        //return null;
+    public int[] getMaxValues(int[] dataFib) {
+        //complete your code here !!
     }
 
 }
