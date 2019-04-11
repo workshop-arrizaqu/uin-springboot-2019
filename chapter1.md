@@ -36,7 +36,7 @@ Klik kanan Project -> Pilih "RUN AS" -> pilih "Spring Boot App"
 
 ## Koneksi Database
 
-Dengan hadirnya dependency JPA, maka ketika project dijalankan maka biasanya akan error karena aplikasi harus memiliki koneksi dengan database, untuk kali ini menggunakan mysql, sebagai berikut: 
+Dengan hadirnya dependency JPA, maka ketika project dijalankan maka biasanya akan error karena aplikasi harus memiliki koneksi dengan database, untuk kali ini menggunakan mysql, sebagai berikut:
 
 1. buka file _**src -&gt; main -&gt; resources -&gt; application.properties**_ dan tuilis script sebagai berikut : 
    ```java
@@ -48,8 +48,6 @@ Dengan hadirnya dependency JPA, maka ketika project dijalankan maka biasanya aka
    ```
 2. sfdsdf
 3. fsdf
-
-
 
 
 
