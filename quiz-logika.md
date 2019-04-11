@@ -66,8 +66,6 @@
 >
 > **Digit 2 -&gt; menunjukkan Total Jumlah  jika hasil Quiz 1 dijumlahkan. **
 >
->
->
 > ```
 > Contoh : 1
 >     * input : 3 
