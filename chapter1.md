@@ -40,7 +40,7 @@ Dengan hadirnya dependency JPA, maka ketika project dijalankan maka biasanya aka
 3. buka file _**src -&gt; main -&gt; resources -&gt; application.properties**_ dan tuilis script sebagai berikut : 
    ```xml
    # koneksi Database MySQL
-   spring.jpa.hibernate.ddl-auto=validate
+   spring.jpa.hibernate.ddl-auto=create
    spring.datasource.url=jdbc:mysql://localhost:3306/sb_uin_jakarta
    spring.datasource.username=root
    spring.datasource.password=

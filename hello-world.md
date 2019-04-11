@@ -11,5 +11,11 @@ Kerangka kerja Spring Web MVC menyediakan arsitektur Model-View-Controller \(MVC
 
 * Controller bertanggung jawab untuk memproses permintaan pengguna dan membangun model yang sesuai dan meneruskannya ke tampilan untuk rendering.
 
+## Controller
+
+* Hello world
+
+
+
 
 
