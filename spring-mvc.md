@@ -13,7 +13,11 @@ Kerangka kerja Spring Web MVC menyediakan arsitektur Model-View-Controller \(MVC
 
 ![](/assets/table-employee)
 
+## Employee Controller
 
+## POJO sebagai Model
+
+## HTML sebagai View
 
 
 
