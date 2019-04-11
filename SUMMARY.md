@@ -9,5 +9,4 @@
 * [Spring MVC](spring-mvc.md)
 * [Bootstrap Layout](bootstrap-layout.md)
 * [Data Form](data-form.md)
-* [Login Logout](bootstrap-layout.md)
 
