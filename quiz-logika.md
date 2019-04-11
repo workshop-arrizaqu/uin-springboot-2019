@@ -60,7 +60,7 @@
 
 ## Quiz
 
-> **Buatlah hasil output 2 digit dengan aturan sebagai berikut : **
+> **Buatlah hasil output 2 digit menggunakan format  Array dengan aturan sebagai berikut : **
 >
 > **Digit 1 -&gt; menuntukkan Panjang suatu Array yang dihasilkan dari Bilangan Fibonachi Quiz 1**
 >
