@@ -24,16 +24,6 @@ Setelah melakukan generate Project dengan spring boot strater maka, selanjutknya
 
    ![](/assets/import-project.png)
 
-## Menjalankan Program
-
-Jalan program dengan banyak cara dalam hal ini secara cepat bisa dilakukan dengan menggunakan cara :
-
-```
-Klik kanan Project -> Pilih "RUN AS" -> pilih "Spring Boot App"
-```
-
-## ![](/assets/run-as)
-
 ## Koneksi Database
 
 Dengan hadirnya dependency JPA, maka ketika project dijalankan maka biasanya akan error karena aplikasi harus memiliki koneksi dengan database, untuk kali ini menggunakan mysql, sebagai berikut:
@@ -55,6 +45,16 @@ Dengan hadirnya dependency JPA, maka ketika project dijalankan maka biasanya aka
    spring.datasource.username=root
    spring.datasource.password=
    ```
+
+## Menjalankan Program
+
+Jalan program dengan banyak cara dalam hal ini secara cepat bisa dilakukan dengan menggunakan cara :
+
+```
+Klik kanan Project -> Pilih "RUN AS" -> pilih "Spring Boot App"
+```
+
+## ![](/assets/run-as)
 
 
 
