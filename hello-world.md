@@ -13,7 +13,9 @@ Kerangka kerja Spring Web MVC menyediakan arsitektur Model-View-Controller \(MVC
 
 ## Controller
 
-* Hello world
+### Membuat Package Controller
+
+![](/assets/wizard-controller-package)
 
 
 
