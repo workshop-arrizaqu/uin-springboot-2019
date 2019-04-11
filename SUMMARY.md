@@ -7,4 +7,5 @@
 * [Quiz Logika](quiz-logika.md)
 * [Jawaban Quiz](quiz-logika/jawaban-quiz.md)
 * [Spring MVC](spring-mvc.md)
+  * [Employee Controller](spring-mvc/employee-controller.md)
 
