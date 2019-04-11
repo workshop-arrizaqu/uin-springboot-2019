@@ -31,14 +31,19 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/hello")
 public class HelloWorld {
 
-	@GetMapping
-	@ResponseBody
-	public String index() {
-		return "hello world java springboot";
-	}
+    @GetMapping
+    @ResponseBody
+    public String index() {
+        return "hello world java springboot";
+    }
 }
-
 ```
+
+### Jalankan di Browser
+
+* buka browser dan ketik url: [http://localhost:8080](http://localhost:8080/hello)
+
+* output :  "hello world java springboot"
 
 
 
