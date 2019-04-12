@@ -183,7 +183,7 @@ Buatlah directory Fragments pada template, yaitu **src-&gt;main-&gt;resources-&g
 
    Buat file index.html pada directory templates.
 
-   ```java
+   ```html
    <!DOCTYPE html>
    <html lang="en">
    <head th:replace="fragments/template :: header"></head>
@@ -195,7 +195,7 @@ Buatlah directory Fragments pada template, yaitu **src-&gt;main-&gt;resources-&g
          <div class="col-lg-12 text-center">
            <h1 class="mt-5">Hello, Java Spring Boot</h1>
            <p class="lead">Table : Employee</p>
-           	Tulis kontent disini ..
+               Tulis kontent disini ..
          </div>
        </div>
      </div>
