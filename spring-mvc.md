@@ -120,7 +120,7 @@ Buatlah directory Fragments pada template, yaitu **src-&gt;main-&gt;resources-&g
 
 1. #### template.html
 
-   Buatlah file tersebut di dalam directory fragments
+   Buatlah file tersebut di dalam directory _**fragments**_
 
    ```html
    <!DOCTYPE html>
