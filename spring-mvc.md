@@ -72,7 +72,7 @@ public class Employee {
 }
 ```
 
-Sebelum dilanjutkan ke Controller, lebih baik untuk dicoba terlebih dahulu dengan menjalankan project. sehingga jika tidak terjadi masalah, maka tentunya POJO diatas akan membuatkan table EMPLOYEE pada MySQL. bisa di cek melalui commandline : 
+Sebelum dilanjutkan ke Controller, lebih baik untuk dicoba terlebih dahulu dengan menjalankan project. sehingga jika tidak terjadi masalah, maka tentunya POJO diatas akan membuatkan table EMPLOYEE pada MySQL. bisa di cek melalui commandline :
 
 ```command
 mysql> use sb_uin_jakarta
@@ -97,8 +97,10 @@ mysql> desc employee;
 +-------------+--------------+------+-----+---------+-------+
 4 rows in set (0.01 sec)
 
-mysql> 
+mysql>
 ```
+
+Terlihat jelas pada command diatas, sudah berhasil membuat table Employee dengan bantuan JPA. 
 
 ## Employee Controller
 
