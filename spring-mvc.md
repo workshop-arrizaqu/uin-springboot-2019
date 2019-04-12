@@ -15,6 +15,20 @@ Kerangka kerja Spring Web MVC menyediakan arsitektur Model-View-Controller \(MVC
 
 ## Employee Controller
 
+Pertama kali tentu membuat Controller dengan nama **EmployeeController** pada package controller.
+
+```java
+@Controller
+@RequestMapping("/employee")
+public class EmployeeController {
+
+	@GetMapping
+	public String index() {
+		return "view_employee";
+	}
+}
+```
+
 ## POJO sebagai Model
 
 ## HTML sebagai View

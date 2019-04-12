@@ -11,5 +11,5 @@
 * [Data Form](data-form.md)
 * [Login / Logout](login-logout.md)
 * [Relasi Object](relasi-object.md)
-* Upload File
+* [Upload File](upload-file.md)
 
