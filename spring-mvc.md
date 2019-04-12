@@ -17,13 +17,59 @@ Kerangka kerja Spring Web MVC menyediakan arsitektur Model-View-Controller \(MVC
 
 Berikut ini akan kita buatkan Model deskripsi table berbasis Object, dengan hadirnya JPA, hal ini sangat memungkin dimana sebelumnya biasa menggunakan SQL Native. dengan Model ini akan kita definisikan Object dan Properti sebagai bagian dari struktur data yang akan disimpan secara persistance di dalam database.
 
-untuk itu perlu dilakukan pembuat package Model tersendiri sebagai berikut: 
+untuk itu perlu dilakukan pembuat package Model tersendiri sebagai berikut:
 
 ![](/assets/package-model)
 
-#### Membuat Class Employee 
+#### Membuat Class Employee
 
-```
+```java
+package com.uinjakarta.smartweb.model;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="EMPLOYEE")
+public class Employee {
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	@Column(name="employee_id")
+	public int employeeId;
+	public String name;
+	@Column(name="address")
+	public String address;
+	public String email;
+	public int getEmployeeId() {
+		return employeeId;
+	}
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+}
 
 ```
 
