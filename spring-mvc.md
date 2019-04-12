@@ -181,6 +181,28 @@ Buatlah directory Fragments pada template, yaitu **src-&gt;main-&gt;resources-&g
 
 2. #### index.html
 
+   Buat file index.html pada directory templates.
+
+   ```java
+   <!DOCTYPE html>
+   <html lang="en">
+   <head th:replace="fragments/template :: header"></head>
+   <body>
+     <!-- Page Content -->
+     <th:block th:replace="fragments/template :: app-nav" ></th:block>
+     <div class="container">
+       <div class="row">
+         <div class="col-lg-12 text-center">
+           <h1 class="mt-5">Hello, Java Spring Boot</h1>
+           <p class="lead">Table : Employee</p>
+           	Tulis kontent disini ..
+         </div>
+       </div>
+     </div>
+   </body>
+   </html>
+   ```
+
 ## Employee Controller
 
 Pertama kali tentu membuat Controller dengan nama **EmployeeController** pada package controller.
