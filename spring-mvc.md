@@ -108,15 +108,15 @@ Seperti yang sudah di singgung sebelumnya View akan bertanggung jawab sebagai in
 
 Untuk mempersingkat waktu sudah disiapkan untuk bisa di **Copy Paste, **yaitu UI Framework dengan simple Bootstrap dan Jquery bisa diakses sebagai layout di aplikasi yang sedang kita buat pada:
 
- [https://github.com/arrizaqu-matrial/workshop-uin-2019/blob/master/view\_content.md](https://github.com/arrizaqu-matrial/workshop-uin-2019/blob/master/view_content.md).
+[https://github.com/arrizaqu-matrial/workshop-uin-2019/blob/master/view\_content.md](https://github.com/arrizaqu-matrial/workshop-uin-2019/blob/master/view_content.md).
 
 ### Membuat DIrectory Fragment
 
+Buatlah directory Fragments pada template, yaitu **src-&gt;main-&gt;resources-&gt;templates-&gt;fragments** seperti gambar berikut ini : 
 
+![](/assets/directory-fragment.png)
 
 ### Membuat FIle HTML
-
-
 
 ## Employee Controller
 
