@@ -104,9 +104,17 @@ Terlihat jelas pada command diatas, sudah berhasil membuat table Employee dengan
 
 ## HTML sebagai View
 
-Seperti yang sudah di singgung sebelumnya View akan bertanggung jawab sebagai interaksi user dengan aplikasi dalam hal ini adalah tampilan yang ada di browser \(Front End\). namun demikian tentu web developer harus memiliki waktu yang cukup untuk mempelajari itu semua terutama adalah User Experiance \(UX\).
+Seperti yang sudah di singgung sebelumnya View akan bertanggung jawab sebagai interaksi user dengan aplikasi dalam hal ini adalah tampilan yang ada di browser \(Front End\). namun demikian tentu web developer harus memiliki waktu yang cukup untuk mempelajari itu semua terutama adalah User Experiance \(UX\). dalam aplikasi kali ini akan menggunakan _**Thymeleaf Engine Template.**_
 
-untuk mempersingkat waktu sudah disiapkan untuk bisa di **Copy Paste, **yaitu UI Framework dengan simple Bootstrap dan Jquery bisa diakses code sebaga layout di aplikasi yang sedang kita buat. bisa dibuka pada
+Untuk mempersingkat waktu sudah disiapkan untuk bisa di **Copy Paste, **yaitu UI Framework dengan simple Bootstrap dan Jquery bisa diakses sebagai layout di aplikasi yang sedang kita buat pada:
+
+ [https://github.com/arrizaqu-matrial/workshop-uin-2019/blob/master/view\_content.md](https://github.com/arrizaqu-matrial/workshop-uin-2019/blob/master/view_content.md).
+
+### Membuat DIrectory Fragment
+
+
+
+### Membuat FIle HTML
 
 
 
