@@ -36,41 +36,68 @@ import javax.persistence.Table;
 @Table(name="EMPLOYEE")
 public class Employee {
 
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name="employee_id")
-	public int employeeId;
-	public String name;
-	@Column(name="address")
-	public String address;
-	public String email;
-	public int getEmployeeId() {
-		return employeeId;
-	}
-	public void setEmployeeId(int employeeId) {
-		this.employeeId = employeeId;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getAddress() {
-		return address;
-	}
-	public void setAddress(String address) {
-		this.address = address;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	
-}
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    @Column(name="employee_id")
+    public int employeeId;
+    public String name;
+    @Column(name="address")
+    public String address;
+    public String email;
+    public int getEmployeeId() {
+        return employeeId;
+    }
+    public void setEmployeeId(int employeeId) {
+        this.employeeId = employeeId;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getAddress() {
+        return address;
+    }
+    public void setAddress(String address) {
+        this.address = address;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
+}
+```
+
+Sebelum dilanjutkan ke Controller, lebih baik untuk dicoba terlebih dahulu dengan menjalankan project. sehingga jika tidak terjadi masalah, maka tentunya POJO diatas akan membuatkan table EMPLOYEE pada MySQL. bisa di cek melalui commandline : 
+
+```command
+mysql> use sb_uin_jakarta
+Database changed
+mysql> show tables;
++------------------------------+
+| Tables_in_pre_sb_uin_jakarta |
++------------------------------+
+| employee                     |
+| hibernate_sequence           |
++------------------------------+
+2 rows in set (0.01 sec)
+
+mysql> desc employee;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| employee_id | int(11)      | NO   | PRI | NULL    |       |
+| address     | varchar(255) | YES  |     | NULL    |       |
+| email       | varchar(255) | YES  |     | NULL    |       |
+| name        | varchar(255) | YES  |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+4 rows in set (0.01 sec)
+
+mysql> 
 ```
 
 ## Employee Controller
