@@ -179,7 +179,7 @@ Buatlah directory Fragments pada template, yaitu **src-&gt;main-&gt;resources-&g
    </html>
    ```
 
-2. #### index.html
+2. #### view\_employee.html
 
    Buat file index.html pada directory templates.
 
