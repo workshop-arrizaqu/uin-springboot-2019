@@ -104,7 +104,9 @@ Terlihat jelas pada command diatas, sudah berhasil membuat table Employee dengan
 
 ## HTML sebagai View
 
+Seperti yang sudah di singgung sebelumnya View akan bertanggung jawab sebagai interaksi user dengan aplikasi dalam hal ini adalah tampilan yang ada di browser \(Front End\). namun demikian tentu web developer harus memiliki waktu yang cukup untuk mempelajari itu semua terutama adalah User Experiance \(UX\). 
 
+untuk mempersingkat waktu bisa diakses code sebaga layout di aplikasi yang sedang kita buat. bisa dibuka pada  
 
 ## Employee Controller
 
