@@ -13,6 +13,20 @@ Kerangka kerja Spring Web MVC menyediakan arsitektur Model-View-Controller \(MVC
 
 ![](/assets/table-employee)
 
+## POJO sebagai Model
+
+Berikut ini akan kita buatkan Model deskripsi table berbasis Object, dengan hadirnya JPA, hal ini sangat memungkin dimana sebelumnya biasa menggunakan SQL Native. dengan Model ini akan kita definisikan Object dan Properti sebagai bagian dari struktur data yang akan disimpan secara persistance di dalam database.
+
+untuk itu perlu dilakukan pembuat package Model tersendiri sebagai berikut: 
+
+![](/assets/package-model)
+
+#### Membuat Class Employee 
+
+```
+
+```
+
 ## Employee Controller
 
 Pertama kali tentu membuat Controller dengan nama **EmployeeController** pada package controller.
@@ -22,14 +36,12 @@ Pertama kali tentu membuat Controller dengan nama **EmployeeController** pada pa
 @RequestMapping("/employee")
 public class EmployeeController {
 
-	@GetMapping
-	public String index() {
-		return "view_employee";
-	}
+    @GetMapping
+    public String index() {
+        return "view_employee";
+    }
 }
 ```
-
-## POJO sebagai Model
 
 ## HTML sebagai View
 
