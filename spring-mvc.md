@@ -100,7 +100,11 @@ mysql> desc employee;
 mysql>
 ```
 
-Terlihat jelas pada command diatas, sudah berhasil membuat table Employee dengan bantuan JPA. 
+Terlihat jelas pada command diatas, sudah berhasil membuat table Employee dengan model yang dibuat sebelumnya.
+
+## HTML sebagai View
+
+
 
 ## Employee Controller
 
@@ -117,8 +121,6 @@ public class EmployeeController {
     }
 }
 ```
-
-## HTML sebagai View
 
 
 
