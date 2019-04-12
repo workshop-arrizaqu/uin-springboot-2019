@@ -7,7 +7,6 @@
 * [Quiz Logika](quiz-logika.md)
 * [Jawaban Quiz](quiz-logika/jawaban-quiz.md)
 * [Spring MVC](spring-mvc.md)
-* [Bootstrap Layout](bootstrap-layout.md)
 * [Data Form](data-form.md)
 * [Login / Logout](login-logout.md)
 * [Relasi Object](relasi-object.md)
