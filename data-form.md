@@ -104,8 +104,8 @@ public List<Employee> findAll(){
 
 ## Memodifikasi Controller index
 
-```
-
+```java
+model.addAttribute("employees", employeeService.findAll());
 ```
 
 ## Form Validation
