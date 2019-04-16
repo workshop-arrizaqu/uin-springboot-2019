@@ -22,7 +22,11 @@ Data form biasanya digunakan untuk memasukkan data pada aplikasi, biasa dikenal 
   </div>
 ```
 
-## Controller
+## Membuat Repository Data
+
+## Membuat Service Layer sebagai Service
+
+
 
 
 
