@@ -89,6 +89,10 @@ public class EmployeeController {
 
 ![](/assets/view-add.png)
 
+## Show Datatable
+
+
+
 ## Form Validation
 
 ### Modifikasi POJO
