@@ -106,5 +106,20 @@ public String email;
 </form>
 ```
 
+### Modifikasi Controller
+
+```java
+@PostMapping("/save")
+public String saveData(Model model, @Valid @ModelAttribute("employee") Employee employee,  BindingResult bindingResult) {
+	if(bindingResult.hasErrors()) {
+		model.addAttribute("title", "Employee CRUD");
+		return "view_employee";
+	}
+	
+		employeeService.save(employee);
+	return "redirect:/employee";
+}
+```
+
 
 
