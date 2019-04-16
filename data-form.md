@@ -91,7 +91,7 @@ public class EmployeeController {
 
 ## Show Datatable
 
-1. Tambahkan service findAll
+1. Tambahkan fungsi findAll pada service
 2. load findAll from Controller
 
 #### Menambahkan fungsi findALL pada service
