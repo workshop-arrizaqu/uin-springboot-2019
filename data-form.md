@@ -119,15 +119,19 @@ model.addAttribute("employees", employeeService.findAll());
       <th scope="col">Address</th>
     </tr>
   </thead>
-	<tbody>
-		<tr th:each="row : ${employees}">
-			<td th:text="${row.name}"></td>
-			<td th:text="${row.email}"></td>
-			<td th:text="${row.address}"></td>
-		</tr>
-	</tbody>
+    <tbody>
+        <tr th:each="row : ${employees}">
+            <td th:text="${row.name}"></td>
+            <td th:text="${row.email}"></td>
+            <td th:text="${row.address}"></td>
+        </tr>
+    </tbody>
 </table>
 ```
+
+## Delete Data
+
+## Update Data
 
 ## Form Validation
 
