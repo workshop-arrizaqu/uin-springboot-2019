@@ -1,6 +1,6 @@
 # Data Form
 
-Data form biasanya digunakan untuk memasukkan data pada aplikasi, biasa dikenal INSERT atau SAVE Data, pada prosesnya java menginginkan adalah setiap form data yang ada harus berkesuaian dengan model yang sudah dibuatkan sebelumnya, pada sesi kali ini akan membahas tentang penerapan Create, Read, Update, Delete sebagai berikut :
+Data form biasanya digunakan untuk memasukkan data pada aplikasi, biasa dikenal INSERT atau SAVE Data, pada prosesnya java menginginkan adalah setiap form data yang ada harus berkesuaian dengan model yang sudah dibuatkan sebelumnya, pada sesi kali ini akan membahas tentang penerapan **CRUD** sebagai berikut :
 
 ## HTML Form
 
