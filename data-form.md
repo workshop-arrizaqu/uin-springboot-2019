@@ -48,14 +48,26 @@ import com.uinjakarta.smartweb.repository.EmployeeRepo;
 @Transactional
 public class EmployeeService {
 
-	@Autowired
-	private EmployeeRepo employeeRepo;
-	
-	public void save(Employee employee) {
-		employeeRepo.save(employee);
-	}
-}
+    @Autowired
+    private EmployeeRepo employeeRepo;
 
+    public void save(Employee employee) {
+        employeeRepo.save(employee);
+    }
+}
+```
+
+## Controller 
+
+```java
+@Autowired
+private EmployeeService employeeService;
+
+@PostMapping("/save")
+@ResponseStatus(HttpStatus.CREATED)
+public void saveData(@ModelAttribute Employee employee) {
+	employeeService.save(employee);
+}
 ```
 
 ## Form Validation
