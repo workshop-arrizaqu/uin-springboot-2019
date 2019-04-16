@@ -73,11 +73,25 @@ public void saveData(@ModelAttribute Employee employee) {
 ## Jalankan Program
 
 1. Compile ulang
-2. Coba akses : _**http://localhost:8080/employee**_
+2. Coba akses : [http://localhost:8080/employee](http://localhost:8080/employee)
 
 ![](/assets/view-add.png)
 
 ## Form Validation
+
+### Modifikasi POJO
+
+```java
+@NotNull
+public String name;
+
+@Email
+public String email;
+```
+
+### Modify HTML view
+
+
 
 
 
