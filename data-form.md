@@ -96,7 +96,7 @@ public class EmployeeController {
 
 #### Menambahkan fungsi findALL pada service
 
-```
+```java
 public List<Employee> findAll(){
     return employeeRepo.findAll();
 }
