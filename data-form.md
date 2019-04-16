@@ -102,10 +102,16 @@ public List<Employee> findAll(){
 }
 ```
 
-## Memodifikasi Controller index
+#### Memodifikasi Controller index
 
 ```java
 model.addAttribute("employees", employeeService.findAll());
+```
+
+#### Menambahkan HTML table
+
+```
+ 
 ```
 
 ## Form Validation
