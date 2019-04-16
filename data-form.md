@@ -91,7 +91,20 @@ public class EmployeeController {
 
 ## Show Datatable
 
+1. Tambahkan service findAll
+2. load findAll from Controller
 
+#### Menambahkan fungsi findALL
+
+```
+
+```
+
+## Memodifikasi Controller index
+
+```
+
+```
 
 ## Form Validation
 
