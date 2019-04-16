@@ -94,7 +94,7 @@ public class EmployeeController {
 1. Tambahkan service findAll
 2. load findAll from Controller
 
-#### Menambahkan fungsi findALL
+#### Menambahkan fungsi findALL pada service
 
 ```
 
