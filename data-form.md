@@ -89,9 +89,22 @@ public String name;
 public String email;
 ```
 
-### Modify HTML view
+### Modify HTML form
 
-
+```java
+<form action="#" th:action="@{/employee/save}" th:object="${employee}" method="POST">
+			Name : <input type="text" th:field="*{name}"/><br/>
+			<p th:if="${#fields.hasErrors('name')}" class="label label-danger" th:errors="*{name}"/>
+			Email : <input type="text" th:field="*{email}"/><br/>
+			<p th:if="${#fields.hasErrors('email')}" class="label label-danger" th:errors="*{email}"/>
+			<input type="submit" value="Save Data" />
+<!-- //show all error 
+<div>
+<div style="color: red;" th:each="err : ${#fields.errors('*')}" th:text="${err}" />
+</div> 
+-->
+</form>
+```
 
 
 
