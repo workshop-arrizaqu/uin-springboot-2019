@@ -67,18 +67,18 @@ private EmployeeService employeeService;
 @RequestMapping("/employee")
 public class EmployeeController {
 
-	@GetMapping
-	public String index(Model model) {
-		model.addAttribute("title", "Employee CRUD");
-		model.addAttribute("employee", new Employee());
-		return "view_employee";
-	}
+    @GetMapping
+    public String index(Model model) {
+        model.addAttribute("title", "Employee CRUD");
+        model.addAttribute("employee", new Employee());
+        return "view_employee";
+    }
 
-	@PostMapping("/save")
-	@ResponseStatus(HttpStatus.CREATED)
-	public void saveData(@ModelAttribute Employee employee) {
-    		employeeService.save(employee);
-	}
+    @PostMapping("/save")
+    @ResponseStatus(HttpStatus.CREATED)
+    public void saveData(@ModelAttribute Employee employee) {
+            employeeService.save(employee);
+    }
 }
 ```
 
