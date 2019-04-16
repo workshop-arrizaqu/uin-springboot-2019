@@ -97,7 +97,9 @@ public class EmployeeController {
 #### Menambahkan fungsi findALL pada service
 
 ```
-
+public List<Employee> findAll(){
+    return employeeRepo.findAll();
+}
 ```
 
 ## Memodifikasi Controller index
