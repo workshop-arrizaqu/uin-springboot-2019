@@ -110,8 +110,23 @@ model.addAttribute("employees", employeeService.findAll());
 
 #### Menambahkan HTML table
 
-```
- 
+```java
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Address</th>
+    </tr>
+  </thead>
+	<tbody>
+		<tr th:each="row : ${employees}">
+			<td th:text="${row.name}"></td>
+			<td th:text="${row.email}"></td>
+			<td th:text="${row.address}"></td>
+		</tr>
+	</tbody>
+</table>
 ```
 
 ## Form Validation
