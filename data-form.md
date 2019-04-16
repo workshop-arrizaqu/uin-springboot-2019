@@ -24,11 +24,17 @@ Data form biasanya digunakan untuk memasukkan data pada aplikasi, biasa dikenal 
 
 ## Membuat Repository Data
 
+```
+package com.uinjakarta.smartweb.repository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.uinjakarta.smartweb.model.Employee;
+
+public interface EmployeeRepo extends JpaRepository<Employee, Integer> {
+
+}
+```
+
 ## Membuat Service Layer sebagai Service
-
-
-
-
 
 ## Form Validation
 
