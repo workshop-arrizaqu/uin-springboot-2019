@@ -36,6 +36,28 @@ public interface EmployeeRepo extends JpaRepository<Employee, Integer> {
 
 ## Membuat Service Layer sebagai Service
 
+```java
+package com.uinjakarta.smartweb.service;
+import javax.transaction.Transactional;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import com.uinjakarta.smartweb.model.Employee;
+import com.uinjakarta.smartweb.repository.EmployeeRepo;
+
+@Service
+@Transactional
+public class EmployeeService {
+
+	@Autowired
+	private EmployeeRepo employeeRepo;
+	
+	public void save(Employee employee) {
+		employeeRepo.save(employee);
+	}
+}
+
+```
+
 ## Form Validation
 
 
