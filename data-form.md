@@ -70,9 +70,12 @@ public void saveData(@ModelAttribute Employee employee) {
 }
 ```
 
-## Tambahkan Data
+## Jalankan Program
 
+1. Compile ulang
+2. Coba akses : _**http://localhost:8080/employee**_
 
+![](/assets/view-add.png)
 
 ## Form Validation
 
