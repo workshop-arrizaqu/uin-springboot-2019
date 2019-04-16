@@ -57,7 +57,7 @@ public class EmployeeService {
 }
 ```
 
-## Controller 
+## Controller
 
 ```java
 @Autowired
@@ -66,9 +66,13 @@ private EmployeeService employeeService;
 @PostMapping("/save")
 @ResponseStatus(HttpStatus.CREATED)
 public void saveData(@ModelAttribute Employee employee) {
-	employeeService.save(employee);
+    employeeService.save(employee);
 }
 ```
+
+## Tambahkan Data
+
+
 
 ## Form Validation
 
