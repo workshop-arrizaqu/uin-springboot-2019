@@ -184,30 +184,45 @@ public void delete(int id) {
 ### Modal
 
 ```html
-<div class="modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Modal body text goes here.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Save changes</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
+<div class="modal" id="edit-modal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Edit Employee</h5>
+				<button type="button" class="close" data-dismiss="modal"
+					aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form action="#" th:action="@{/employee/update}"
+					th:object="${employee}" method="POST">
+					<input type="hidden" id="edit-employeeId" th:field="*{employeeId}" />
+					Name : <input id="edit-name" type="text" th:field="*{name}" /><br />
+					Email : <input id="edit-email" type="text" th:field="*{email}" /><br />
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary">Save changes</button>
+				<button type="button" class="btn btn-secondary"
+					data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
 </div>
 ```
 
 ### Javascript
 
+```
+
+```
+
 ### controller
+
+```
+
+```
 
 ## Form Validation
 
