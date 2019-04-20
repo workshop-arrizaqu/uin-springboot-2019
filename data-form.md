@@ -117,15 +117,20 @@ model.addAttribute("employees", employeeService.findAll());
       <th scope="col">Name</th>
       <th scope="col">Email</th>
       <th scope="col">Address</th>
+      <th scop="col">Action</th>
     </tr>
   </thead>
-    <tbody>
-        <tr th:each="row : ${employees}">
-            <td th:text="${row.name}"></td>
-            <td th:text="${row.email}"></td>
-            <td th:text="${row.address}"></td>
-        </tr>
-    </tbody>
+	<tbody>
+		<tr th:each="row : ${employees}">
+			<td th:text="${row.name}"></td>
+			<td th:text="${row.email}"></td>
+			<td th:text="${row.address}"></td>
+			<td>
+				<a href="#" th:attr="data-id=${row.employeeId}"class="btn btn-sm btn-warning">Edit</a>
+				<a href="#" class="btn btn-sm btn-danger">Hapus</a>
+			</td>
+		</tr>
+	</tbody>
 </table>
 ```
 
@@ -139,17 +144,17 @@ model.addAttribute("employees", employeeService.findAll());
 
 ```js
 <script type="text/javascript" th:inline="javascript">
-	$(document).ready(function(){
-		var webRoot = /*[[@{/}]]*/
-		$('.btn-warning').on('click', function(){
-			var id = $(this).attr('data-id');
-			var conf=confirm("Are you sure delete this data ?");
-			if(conf){
-				window.location=webRoot + 'employee/delete/' + id;
-			}
-			return false;
-		});
-	});
+    $(document).ready(function(){
+        var webRoot = /*[[@{/}]]*/
+        $('.btn-warning').on('click', function(){
+            var id = $(this).attr('data-id');
+            var conf=confirm("Are you sure delete this data ?");
+            if(conf){
+                window.location=webRoot + 'employee/delete/' + id;
+            }
+            return false;
+        });
+    });
 </script>
 ```
 
