@@ -185,49 +185,49 @@ public void delete(int id) {
 
 ```html
 <div class="modal" id="edit-modal" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Edit Employee</h5>
-					<button type="button" class="close" data-dismiss="modal"
-						aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<form action="#" th:action="@{/employee/update}"
-						th:object="${employee}" method="POST">
-				<div class="modal-body">
-						<input type="hidden" id="edit-employeeId" th:field="*{employeeId}" />
-						Name : <input id="edit-name" type="text" th:field="*{name}" /><br />
-						Email : <input id="edit-email" type="text" th:field="*{email}" /><br />
-					
-				</div>
-				<div class="modal-footer">
-				<input value="Update" type="submit" class="btn btn-primary" />
-					<button type="button" class="btn btn-secondary"
-						data-dismiss="modal">Close</button>
-				</div>
-				</form>
-			</div>
-		</div>
-	</div>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit Employee</h5>
+                    <button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="#" th:action="@{/employee/update}"
+                        th:object="${employee}" method="POST">
+                <div class="modal-body">
+                        <input type="hidden" id="edit-employeeId" th:field="*{employeeId}" />
+                        Name : <input id="edit-name" type="text" th:field="*{name}" /><br />
+                        Email : <input id="edit-email" type="text" th:field="*{email}" /><br />
+
+                </div>
+                <div class="modal-footer">
+                <input value="Update" type="submit" class="btn btn-primary" />
+                    <button type="button" class="btn btn-secondary"
+                        data-dismiss="modal">Close</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
 ```
 
 ### Javascript
 
 ```js
 $('.btn-warning').on('click', function(){
-    var id = $(this).attr('data-id');
-    $.ajax({
-        url : webRoot + 'employee/get/'+ id,
-        success: function(employee){
-            console.log(employee);
-            $('#edit-employeeId').val(employee.employeeId);
-            $('#edit-name').val(employee.name);
-            $('#edit-email').val(employee.email);
-        }
-    });
-    $('#edit-modal').modal();
+	var id = $(this).attr('data-id');
+	$.ajax({
+		url : webRoot + 'employee/get/'+ id,
+		success: function(employee){
+			console.log(employee);
+			$('#edit-employeeId').val(employee.employeeId);
+			$('#edit-name').val(employee.name);
+			$('#edit-email').val(employee.email);
+		}
+	});
+	$('#edit-modal').modal();
 });
 ```
 
