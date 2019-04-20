@@ -137,11 +137,15 @@ model.addAttribute("employees", employeeService.findAll());
 
 ### Javascript
 
-
-
 ### Controller
 
-
+```java
+@GetMapping("/delete/{id}")
+public String delete(@PathVariable("id") int id) {
+		employeeService.delete(id);
+	return "redirect:/employee";
+}
+```
 
 #### Service
 
@@ -151,7 +155,7 @@ public void delete(int id) {
     Employee employee = new Employee();
     employee.setEmployeeId(id);
     employeeRepo.delete(employee);
-}		
+}
 ```
 
 ## Update Data
