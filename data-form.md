@@ -135,6 +135,25 @@ model.addAttribute("employees", employeeService.findAll());
 
 ## Delete Data
 
+### Javascript
+
+
+
+### Controller
+
+
+
+#### Service
+
+```java
+public void delete(int id) {
+    // TODO Auto-generated method stub
+    Employee employee = new Employee();
+    employee.setEmployeeId(id);
+    employeeRepo.delete(employee);
+}		
+```
+
 ## Update Data
 
 ## Form Validation
