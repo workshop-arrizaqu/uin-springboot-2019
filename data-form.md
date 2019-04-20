@@ -126,9 +126,9 @@ model.addAttribute("employees", employeeService.findAll());
             <td th:text="${row.email}"></td>
             <td th:text="${row.address}"></td>
             <td>
-	        <a href="#" th:attr="data-id=${row.employeeId}" class="btn btn-sm btn-warning">Edit</a>
-		<a href="#" th:attr="data-id=${row.employeeId}" class="btn btn-sm btn-danger">Hapus</a>
-	    </td>
+            <a href="#" th:attr="data-id=${row.employeeId}" class="btn btn-sm btn-warning">Edit</a>
+        <a href="#" th:attr="data-id=${row.employeeId}" class="btn btn-sm btn-danger">Hapus</a>
+        </td>
         </tr>
     </tbody>
 </table>
@@ -180,6 +180,12 @@ public void delete(int id) {
 ```
 
 ## Update Data
+
+### Modal
+
+### Javascript
+
+### controller
 
 ## Form Validation
 
