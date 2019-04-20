@@ -214,8 +214,20 @@ public void delete(int id) {
 
 ### Javascript
 
-```
-
+```js
+$('.btn-warning').on('click', function(){
+	var id = $(this).attr('data-id');
+	$.ajax({
+		url : webRoot + 'employee/get/'+ id,
+		success: function(employee){
+			console.log(employee);
+			$('#edit-employeeId').val(employee.employeeId);
+			$('#edit-name').val(employee.name);
+			$('#edit-email').val(employee.email);
+		}
+	});
+	$('#edit-modal').modal();
+});
 ```
 
 ### controller
