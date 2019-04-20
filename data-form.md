@@ -181,7 +181,13 @@ public void delete(int id) {
 
 ## Update Data
 
-### controller
+### Custome Data Modal
+
+```java
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+```
+
+### Controller
 
 ```java
 //for update record
