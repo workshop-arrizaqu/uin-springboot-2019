@@ -9,6 +9,5 @@
 * [Spring MVC](spring-mvc.md)
 * [CRUD Data Form](data-form.md)
 * [Login / Logout](login-logout.md)
-* [Data Form dan Save Data](data-form.md)
 * [Upload File](upload-file.md)
 
