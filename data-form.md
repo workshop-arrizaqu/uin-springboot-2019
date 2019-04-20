@@ -137,13 +137,29 @@ model.addAttribute("employees", employeeService.findAll());
 
 ### Javascript
 
+```js
+<script type="text/javascript" th:inline="javascript">
+	$(document).ready(function(){
+		var webRoot = /*[[@{/}]]*/
+		$('.btn-warning').on('click', function(){
+			var id = $(this).attr('data-id');
+			var conf=confirm("Are you sure delete this data ?");
+			if(conf){
+				window.location=webRoot + 'employee/delete/' + id;
+			}
+			return false;
+		});
+	});
+</script>
+```
+
 ### Controller
 
 ```java
 @GetMapping("/delete/{id}")
 public String delete(@PathVariable("id") int id) {
-		employeeService.delete(id);
-	return "redirect:/employee";
+        employeeService.delete(id);
+    return "redirect:/employee";
 }
 ```
 
