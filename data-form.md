@@ -181,6 +181,26 @@ public void delete(int id) {
 
 ## Update Data
 
+### controller
+
+```java
+//for update record
+// get record by id
+@GetMapping("/get/{id}")
+@ResponseBody
+public Employee getEmployeeById(@PathVariable("id") int id) {
+    Employee employee = employeeService.getEmployeeById(id);
+    return employee;
+}
+
+// execute update
+@PostMapping("/update")
+public String update(@ModelAttribute("employee") Employee employee) {
+    employeeService.save(employee);
+    return "redirect:/employee";
+}
+```
+
 ### Modal
 
 ```html
@@ -229,26 +249,6 @@ $('.btn-warning').on('click', function(){
     });
     $('#edit-modal').modal();
 });
-```
-
-### controller
-
-```java
-//for update record
-// get record by id
-@GetMapping("/get/{id}")
-@ResponseBody
-public Employee getEmployeeById(@PathVariable("id") int id) {
-	Employee employee = employeeService.getEmployeeById(id);
-	return employee;
-}
-
-// execute update
-@PostMapping("/update")
-public String update(@ModelAttribute("employee") Employee employee) {
-	employeeService.save(employee);
-	return "redirect:/employee";
-}
 ```
 
 ## Form Validation
