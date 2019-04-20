@@ -8,6 +8,4 @@
 * [Jawaban Quiz](quiz-logika/jawaban-quiz.md)
 * [Spring MVC](spring-mvc.md)
 * [CRUD Data Form](data-form.md)
-* [Login / Logout](login-logout.md)
-* [Upload File](upload-file.md)
 
