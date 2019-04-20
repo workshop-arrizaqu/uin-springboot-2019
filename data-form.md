@@ -129,6 +129,10 @@ model.addAttribute("employees", employeeService.findAll());
 </table>
 ```
 
+#### Hasil Browser
+
+![](/assets/hasil-browser)
+
 ## Delete Data
 
 ## Update Data
@@ -177,9 +181,7 @@ public String saveData(Model model, @Valid @ModelAttribute("employee") Employee 
 }
 ```
 
-### Hasil Browser 
+### Hasil Browser
 
 ![](/assets/result-browser)
-
-
 
