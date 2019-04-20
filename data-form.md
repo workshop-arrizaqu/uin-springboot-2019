@@ -120,17 +120,17 @@ model.addAttribute("employees", employeeService.findAll());
       <th scop="col">Action</th>
     </tr>
   </thead>
-	<tbody>
-		<tr th:each="row : ${employees}">
-			<td th:text="${row.name}"></td>
-			<td th:text="${row.email}"></td>
-			<td th:text="${row.address}"></td>
-			<td>
-				<a href="#" th:attr="data-id=${row.employeeId}"class="btn btn-sm btn-warning">Edit</a>
-				<a href="#" class="btn btn-sm btn-danger">Hapus</a>
-			</td>
-		</tr>
-	</tbody>
+    <tbody>
+        <tr th:each="row : ${employees}">
+            <td th:text="${row.name}"></td>
+            <td th:text="${row.email}"></td>
+            <td th:text="${row.address}"></td>
+            <td>
+	        <a href="#" th:attr="data-id=${row.employeeId}" class="btn btn-sm btn-warning">Edit</a>
+		<a href="#" th:attr="data-id=${row.employeeId}" class="btn btn-sm btn-danger">Hapus</a>
+	    </td>
+        </tr>
+    </tbody>
 </table>
 ```
 
