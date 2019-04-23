@@ -18,4 +18,20 @@
 * Master Detail
 * Call Store Procedure
 * Custome Query
+* [API](api.md)
+  * RestFull
+  * SoapXML
+  * RGPC
+* WebFlux
+* JWT
+* Deployment
+* [DevOps](devops.md)
+  * [Docker](devops/docker.md)
+  * [Countinous Integration CI](devops/countinous-integration-ci.md)
+  * kubernates
+* [Kafka](kafka.md)
+* Reporting
+  * PDF
+  * Excel
+  * Ijasper Report
 
