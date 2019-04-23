@@ -17,4 +17,5 @@
 * Object Relation
 * Master Detail
 * Call Store Procedure
+* Custome Query
 
