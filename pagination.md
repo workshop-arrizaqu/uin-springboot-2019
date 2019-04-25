@@ -27,20 +27,16 @@ public Page<Employee> findAll(Pageable pageable){
 
 ## Controller
 
-Hampir sama dengan service, menghadirkan Pageable Parameter sebagai inputan sebagai lalu lintas data pagination, contoh sebagai berikut: 
+Hampir sama dengan service, menghadirkan Pageable Parameter sebagai inputan sebagai lalu lintas data pagination, contoh sebagai berikut:
 
 ```java
 @GetMapping
 @ResponseBody
 public Page index(Model model, Pageable pageable) {
-	model.addAttribute("title", "Employee CRUD");
-	model.addAttribute("employee", new Employee());
-	Page page = employeeService.findAll(pageable);
-	return page;
+    Page page = employeeService.findAll(pageable);
+    return page;
 }
 ```
-
-
 
 ## Thymeleaf HTML
 
