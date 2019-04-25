@@ -44,16 +44,27 @@ output :
 {"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"offset":0,"pageSize":20,"pageNumber":0,"unpaged":false,"paged":true},"totalElements":0,"last":true,"totalPages":0,"size":20,"number":0,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"first":true,"empty":true}
 ```
 
-pada hasil menginginkan output nya adalah text/html maka : 
+pada hasil menginginkan output nya adalah text/html maka :
 
 ```java
 @GetMapping
 public String index(Model model,@PageableDefault(size=10) Pageable pageable) {
-	model.addAttribute("title", "Employee CRUD");
-	model.addAttribute("employee", new Employee());
-	Page page = employeeService.findAll(pageable);
-	model.addAttribute("page", page);
-	return "view_employee";
+    model.addAttribute("title", "Employee CRUD");
+    model.addAttribute("employee", new Employee());
+    Page page = employeeService.findAll(pageable);
+    model.addAttribute("page", page);
+    
+    //currentPage
+    int numberOfShowing = 3;
+    int currentPage = page.getNumber()+1;
+    //startPaging
+    int startPaging = ((currentPage - numberOfShowing ) < 0 ) ? 0 : currentPage - numberOfShowing;  
+    //endPaging
+    int endPaging = ((currentPage + numberOfShowing) > page.getTotalPages()) ? page.getTotalPages() : (currentPage-1) + numberOfShowing; 
+    model.addAttribute("page", page);
+    model.addAttribute("startPaging", startPaging);
+    model.addAttribute("endPaging", endPaging);
+    return "view_employee";
 }
 ```
 
