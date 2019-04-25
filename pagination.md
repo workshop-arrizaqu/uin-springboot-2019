@@ -36,16 +36,39 @@ public Page index(Model model, Pageable pageable) {
     Page page = employeeService.findAll(pageable);
     return page;
 }
-
 ```
 
-output : 
+output :
 
 ```
 {"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"offset":0,"pageSize":20,"pageNumber":0,"unpaged":false,"paged":true},"totalElements":0,"last":true,"totalPages":0,"size":20,"number":0,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"first":true,"empty":true}
 ```
 
 ## Thymeleaf HTML
+
+```java
+<div id="pagination">
+	<nav aria-label="Page navigation example">
+		<ul class="pagination">
+			<li th:if="${page.hasPrevious()}" class="page-item"><a
+				class="page-link"
+				th:href="@{/employee(page=${page.number-1},size=${page.size})}">Previous</a>
+			</li>
+			<span th:each="i: ${#numbers.sequence(0, page.totalPages - 1)}">
+				<li class="page-item"
+				th:classappend="${i == page.pageable.pageNumber} ? active">
+					<a class="page-link"
+					th:href="@{/employee(page=${i},size=${page.size})}">[[${i}+1]]</a>
+				</li>
+			</span>
+			<li th:if="${page.hasNext()}" class="page-item"><a
+				class="page-link"
+				th:href="@{/employee(page=${page.number+1},size=${page.size})}">Next</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+```
 
 
 
