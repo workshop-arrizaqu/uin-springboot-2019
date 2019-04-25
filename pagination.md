@@ -13,13 +13,13 @@ public interface EmployeeRepo extends JpaRepository<Employee, Integer> {
 
 ## Service
 
-Ada beberapa untuk bisa dimodifikasi adalah : 
+Ada beberapa untuk bisa dimodifikasi adalah :
 
 1. Pageable Parameter sebagai inputan.
 2. memanggil findAll dengan parameter pageable.
 3. Return Page&lt;Entity&gt;
 
-```
+```java
 public Page<Employee> findAll(Pageable pageable){
     return employeeRepo.findAll(pageable);
 }
