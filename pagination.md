@@ -36,6 +36,13 @@ public Page index(Model model, Pageable pageable) {
     Page page = employeeService.findAll(pageable);
     return page;
 }
+
+```
+
+output : 
+
+```
+{"content":[],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"offset":0,"pageSize":20,"pageNumber":0,"unpaged":false,"paged":true},"totalElements":0,"last":true,"totalPages":0,"size":20,"number":0,"sort":{"sorted":false,"unsorted":true,"empty":true},"numberOfElements":0,"first":true,"empty":true}
 ```
 
 ## Thymeleaf HTML
