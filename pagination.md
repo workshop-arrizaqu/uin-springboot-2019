@@ -4,7 +4,7 @@ Pagination adalah salah metode yang sangat penting untuk diimplementasikan dalam
 
 ## Repository
 
-```
+```java
 #sama tidak banyak perubahan.
 public interface EmployeeRepo extends JpaRepository<Employee, Integer> {
 
