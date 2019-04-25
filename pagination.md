@@ -27,6 +27,8 @@ public Page<Employee> findAll(Pageable pageable){
 
 ## Controller
 
+Hampir sama dengan service, menghadirkan Pageable Parameter sebagai inputan sebagai lalu lintas data pagination
+
 ## Thymeleaf HTML
 
 
