@@ -42,22 +42,38 @@ protected void configure(HttpSecurity http) throws Exception {
 ```java
 @Autowired
 public void globalConfig(AuthenticationManagerBuilder auth) throws Exception {
-	auth.inMemoryAuthentication()
-		//user 1
-		.withUser("arrizaqu")
-		.password("{noop}1234")
-		.roles("admin")
-			.and()
-			//user 2
-			.withUser("tanisha")
-			.password("{noop}arrizaqu")
-			.roles("admin","child");
+    auth.inMemoryAuthentication()
+        //user 1
+        .withUser("arrizaqu")
+        .password("{noop}1234")
+        .roles("admin")
+            .and()
+            //user 2
+            .withUser("tanisha")
+            .password("{noop}arrizaqu")
+            .roles("admin","child");
 }
+
+/*
+case example : 
+http
+    .authorizeRequests()
+        .antMatchers("/high_level_url_A/sub_level_1").hasRole('USER')
+        .antMatchers("/high_level_url_A/sub_level_2").hasRole('USER2')
+        .somethingElse() // for /high_level_url_A/**
+        .antMatchers("/high_level_url_A/**").authenticated()
+        .antMatchers("/high_level_url_B/sub_level_1").permitAll()
+        .antMatchers("/high_level_url_B/sub_level_2").hasRole('USER3')
+        .somethingElse() // for /high_level_url_B/**
+        .antMatchers("/high_level_url_B/**").authenticated()
+        .anyRequest().permitAll()
+*/
 ```
 
 ## Reference
 
 1. [https://www.mkyong.com/spring-boot/spring-security-there-is-no-passwordencoder-mapped-for-the-id-null/](https://www.mkyong.com/spring-boot/spring-security-there-is-no-passwordencoder-mapped-for-the-id-null/)
+2. [https://stackoverflow.com/questions/35890540/when-to-use-spring-securitys-antmatcher](https://stackoverflow.com/questions/35890540/when-to-use-spring-securitys-antmatcher)
 
 
 
