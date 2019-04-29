@@ -32,12 +32,9 @@ public void configurationGlobal(AuthenticationManagerBuilder auth) throws Except
 
 ### Handle Controller Route and Role
 
-
-
 ## Reference
 
 1. [https://www.mkyong.com/spring-boot/spring-security-there-is-no-passwordencoder-mapped-for-the-id-null/](https://www.mkyong.com/spring-boot/spring-security-there-is-no-passwordencoder-mapped-for-the-id-null/)
 
-2. 
 
 

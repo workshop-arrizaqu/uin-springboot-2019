@@ -104,8 +104,6 @@ $(document).ready(function() {
 </script>
 ```
 
-
-
 ## Controller
 
 ```java
