@@ -5,6 +5,7 @@ Beberapa library yang tidak asing untuk kalangan web developer adalah salah satu
 1. Default searching
 2. Pagination
 3. Sorting
+4. Custome Button dan Modal
 
 berikut ini adalah bagaimana mengimplementasikan datatables pada springboot.
 
