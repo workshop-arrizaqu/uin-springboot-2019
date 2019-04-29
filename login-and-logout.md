@@ -73,13 +73,12 @@ http.authorizeRequests()
 
 add role, add script antMatchers like bellow :
 
-```
+```java
 .antMatchers("/department/**").hasRole("admin")
 .antMatchers("/employee/**").hasRole("child")
-
 ```
 
- will full script like :
+will full script like :
 
 ```java
 @Override
