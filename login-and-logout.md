@@ -71,6 +71,14 @@ http.authorizeRequests()
 
 ## Add Role In
 
+add role, add script antMatchers like bellow : 
+
+```java
+.antMatchers("/department/**").hasRole("admin")
+.antMatchers("/employee/**").hasRole("child")
+
+```
+
 ```java
 @Override
 protected void configure(HttpSecurity http) throws Exception {
