@@ -53,20 +53,6 @@ public void globalConfig(AuthenticationManagerBuilder auth) throws Exception {
             .password("{noop}arrizaqu")
             .roles("admin","child");
 }
-
-/*
-case example : 
-http.authorizeRequests()
-        .antMatchers("/high_level_url_A/sub_level_1").hasRole('USER')
-        .antMatchers("/high_level_url_A/sub_level_2").hasRole('USER2')
-        .somethingElse() // for /high_level_url_A/**
-        .antMatchers("/high_level_url_A/**").authenticated()
-        .antMatchers("/high_level_url_B/sub_level_1").permitAll()
-        .antMatchers("/high_level_url_B/sub_level_2").hasRole('USER3')
-        .somethingElse() // for /high_level_url_B/**
-        .antMatchers("/high_level_url_B/**").authenticated()
-        .anyRequest().permitAll()
-*/
 ```
 
 ## Add Role In
@@ -93,6 +79,24 @@ protected void configure(HttpSecurity http) throws Exception {
         .and()
         .formLogin();
 }
+```
+
+## Another case example
+
+```java
+/*
+case example : 
+http.authorizeRequests()
+        .antMatchers("/high_level_url_A/sub_level_1").hasRole('USER')
+        .antMatchers("/high_level_url_A/sub_level_2").hasRole('USER2')
+        .somethingElse() // for /high_level_url_A/**
+        .antMatchers("/high_level_url_A/**").authenticated()
+        .antMatchers("/high_level_url_B/sub_level_1").permitAll()
+        .antMatchers("/high_level_url_B/sub_level_2").hasRole('USER3')
+        .somethingElse() // for /high_level_url_B/**
+        .antMatchers("/high_level_url_B/**").authenticated()
+        .anyRequest().permitAll()
+*/
 ```
 
 ## Reference
