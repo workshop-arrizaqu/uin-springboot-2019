@@ -25,5 +25,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 }
 ```
 
-Add Role for Route 
+### Add Role for Route
+
+## Reference
+
+1. [https://www.mkyong.com/spring-boot/spring-security-there-is-no-passwordencoder-mapped-for-the-id-null/](https://www.mkyong.com/spring-boot/spring-security-there-is-no-passwordencoder-mapped-for-the-id-null/)
+
+2. 
+
 
