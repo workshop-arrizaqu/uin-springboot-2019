@@ -9,6 +9,42 @@ Beberapa library yang tidak asing untuk kalangan web developer adalah salah satu
 
 berikut ini adalah bagaimana mengimplementasikan datatables pada springboot.
 
+## Datatable POJO
+
+```java
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class DataTablesPlugins {
+
+    private int totalPages;
+    private List<Department> data;
+    private long recordsFiltered;
+
+    public int getTotalPages() {
+        return totalPages;
+    }
+    public void setTotalPages(int totalPages) {
+        this.totalPages = totalPages;
+    }
+    public List<Department> getData() {
+        return data;
+    }
+    public void setData(List<Department> data) {
+        this.data = data;
+    }
+    public long getRecordsFiltered() {
+        return recordsFiltered;
+    }
+    public void setRecordsFiltered(long recordsFiltered) {
+        this.recordsFiltered = recordsFiltered;
+    }
+
+}
+```
+
 ## HTML
 
 ```html
@@ -68,41 +104,7 @@ $(document).ready(function() {
 </script>
 ```
 
-## Datatable POJO
 
-```java
-import java.util.List;
-
-import org.springframework.stereotype.Component;
-
-@Component
-public class DataTablesPlugins {
-
-    private int totalPages;
-    private List<Department> data;
-    private long recordsFiltered;
-
-    public int getTotalPages() {
-        return totalPages;
-    }
-    public void setTotalPages(int totalPages) {
-        this.totalPages = totalPages;
-    }
-    public List<Department> getData() {
-        return data;
-    }
-    public void setData(List<Department> data) {
-        this.data = data;
-    }
-    public long getRecordsFiltered() {
-        return recordsFiltered;
-    }
-    public void setRecordsFiltered(long recordsFiltered) {
-        this.recordsFiltered = recordsFiltered;
-    }
-
-}
-```
 
 ## Controller
 
