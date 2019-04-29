@@ -39,8 +39,20 @@ protected void configure(HttpSecurity http) throws Exception {
 
 ### Custome Username and Password
 
-```
-
+```java
+@Autowired
+public void globalConfig(AuthenticationManagerBuilder auth) throws Exception {
+	auth.inMemoryAuthentication()
+		//user 1
+		.withUser("arrizaqu")
+		.password("{noop}1234")
+		.roles("admin")
+			.and()
+			//user 2
+			.withUser("tanisha")
+			.password("{noop}arrizaqu")
+			.roles("admin","child");
+}
 ```
 
 ## Reference
