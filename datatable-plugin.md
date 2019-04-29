@@ -11,8 +11,17 @@ berikut ini adalah bagaimana mengimplementasikan datatables pada springboot.
 
 ## HTML
 
-```
-
+```java
+<table id="table_id" class="display">
+<thead>
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Email</th>
+	</tr>
+</thead>
+<tbody></tbody>
+</table>
 ```
 
 ## Javascript
