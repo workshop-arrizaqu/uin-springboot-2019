@@ -20,6 +20,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 
 ### Authenticated
 
+Default username : user.
+
+password generated from console.
+
 ```java
 @Override
 protected void configure(HttpSecurity http) throws Exception {
@@ -32,6 +36,8 @@ protected void configure(HttpSecurity http) throws Exception {
         .loginForm();
 }
 ```
+
+### Custome 
 
 ### Handle Controller Route and Role
 
