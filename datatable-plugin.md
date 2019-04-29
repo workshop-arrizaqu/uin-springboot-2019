@@ -1,6 +1,6 @@
 # Datatables plugins
 
-Beberapa library yang tidak asing untuk kalangan web developer adalah salah satunya Datatables, beberapa kebutuhan yang cukup membantu pada library adalah : 
+Beberapa library yang tidak asing untuk kalangan web developer adalah salah satunya Datatables, beberapa kebutuhan yang cukup membantu pada library adalah :
 
 1. Default searching
 2. Pagination
