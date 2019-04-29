@@ -69,6 +69,23 @@ http.authorizeRequests()
 */
 ```
 
+## Add Role In
+
+```
+@Override
+protected void configure(HttpSecurity http) throws Exception {
+	// TODO Auto-generated method stub
+	//super.configure(http);
+	http.authorizeRequests()
+		.antMatchers("/department/**").hasRole("admin")
+		.antMatchers("/employee/**").hasRole("child")
+		.anyRequest()
+		.authenticated()
+		.and()
+		.formLogin();
+}
+```
+
 ## Reference
 
 1. [https://www.mkyong.com/spring-boot/spring-security-there-is-no-passwordencoder-mapped-for-the-id-null/](https://www.mkyong.com/spring-boot/spring-security-there-is-no-passwordencoder-mapped-for-the-id-null/)
