@@ -23,13 +23,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 ```java
 @Override
 protected void configure(HttpSecurity http) throws Exception {
-	// TODO Auto-generated method stub
-	//super.configure(http);
-	http.authorizeRequests()
-		.anyRequest()
-		.authenticated()
-		.and()
-		.httpBasic();
+    // TODO Auto-generated method stub
+    //super.configure(http);
+    http.authorizeRequests()
+        .anyRequest()
+        .authenticated()
+        .and()
+        .loginForm();
 }
 ```
 
