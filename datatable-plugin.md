@@ -72,15 +72,15 @@ $(document).ready(function() {
 
 ```java
 @GetMapping("/findall")
-	@ResponseBody
-	public DataTablesPlugins findAll(@RequestParam(value="search", defaultValue="", required=false) String search, Pageable pageable){
-		Page page = deptServ.findAllBySearchInput(search, pageable);
-		dataTables.setData(page.getContent());
-		dataTables.setTotalPages(page.getTotalPages());
-		dataTables.setRecordsFiltered(page.getTotalElements());
-		
-		return dataTables;
-	}
+@ResponseBody
+public DataTablesPlugins findAll(@RequestParam(value="search", defaultValue="", required=false) String search, Pageable pageable){
+    Page page = deptServ.findAllBySearchInput(search, pageable);
+    dataTables.setData(page.getContent());
+    dataTables.setTotalPages(page.getTotalPages());
+    dataTables.setRecordsFiltered(page.getTotalElements());
+
+    return dataTables;
+}
 ```
 
 ## Referensi
