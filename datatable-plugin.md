@@ -9,6 +9,16 @@ Beberapa library yang tidak asing untuk kalangan web developer adalah salah satu
 
 berikut ini adalah bagaimana mengimplementasikan datatables pada springboot.
 
+## Repository
+
+## Service
+
+## Controller
+
+## HTML
+
+## Javascript
+
 ## Referensi
 
 1. [https://datatables.net/manual/ajax](https://datatables.net/manual/ajax)
