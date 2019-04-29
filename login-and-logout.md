@@ -56,8 +56,7 @@ public void globalConfig(AuthenticationManagerBuilder auth) throws Exception {
 
 /*
 case example : 
-http
-    .authorizeRequests()
+http.authorizeRequests()
         .antMatchers("/high_level_url_A/sub_level_1").hasRole('USER')
         .antMatchers("/high_level_url_A/sub_level_2").hasRole('USER2')
         .somethingElse() // for /high_level_url_A/**
