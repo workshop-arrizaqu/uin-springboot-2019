@@ -18,15 +18,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 }
 ```
 
-### Create Username, Password & Role
+### Authenticated
 
 ```java
-@Autowired
-public void configurationGlobal(AuthenticationManagerBuilder auth) throws Exception {
-    auth.inMemoryAuthentication()
-        .withUser("arrizaqu")
-        .password("{noop}1234")
-        .roles("admin");
+@Override
+protected void configure(HttpSecurity http) throws Exception {
+	// TODO Auto-generated method stub
+	//super.configure(http);
+	http.authorizeRequests()
+		.anyRequest()
+		.authenticated()
+		.and()
+		.httpBasic();
 }
 ```
 

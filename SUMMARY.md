@@ -14,8 +14,8 @@
 * [Login and Logout](login-and-logout.md)
 * [Upload Files](upload-files.md)
 * [CRUD Generator](crud-generator.md)
-* Object Relation
-* Master Detail
+* [Object Relation](object-relation.md)
+* [Master Detail](master-detail.md)
 * Call Store Procedure
 * Custome Query
 * [API](api.md)
