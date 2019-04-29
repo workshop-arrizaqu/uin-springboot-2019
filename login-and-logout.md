@@ -15,17 +15,21 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter{
 
-    @Autowired
-    public void configurationGlobal(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication()
-            .withUser("arrizaqu")
-            .password("{noop}1234")
-            .roles("admin");
-    }
 }
 ```
 
-### Add Role for Route
+### Create Username, Password & Role
+
+```java
+@Autowired
+public void configurationGlobal(AuthenticationManagerBuilder auth) throws Exception {
+    auth.inMemoryAuthentication()
+        .withUser("arrizaqu")
+        .password("{noop}1234")
+        .roles("admin");
+}
+
+```
 
 ## Reference
 
