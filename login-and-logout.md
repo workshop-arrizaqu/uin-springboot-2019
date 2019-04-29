@@ -37,8 +37,6 @@ protected void configure(HttpSecurity http) throws Exception {
 }
 ```
 
-### Custome 
-
 ### Handle Controller Route and Role
 
 ## Reference
