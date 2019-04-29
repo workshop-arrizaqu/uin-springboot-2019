@@ -11,14 +11,14 @@ berikut ini adalah bagaimana mengimplementasikan datatables pada springboot.
 
 ## HTML
 
-```java
+```html
 <table id="table_id" class="display">
 <thead>
-	<tr>
-		<th>ID</th>
-		<th>Name</th>
-		<th>Email</th>
-	</tr>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
 </thead>
 <tbody></tbody>
 </table>
@@ -26,8 +26,40 @@ berikut ini adalah bagaimana mengimplementasikan datatables pada springboot.
 
 ## Javascript
 
-```
-
+```js
+$(document).ready(function() {
+	var webRoot = /*[[@{/}]]*/;
+	$('#table_id').DataTable({
+		"processing": true,
+        "serverSide": true,
+		"ajax": {
+			url : webRoot +"department/findall",
+			type: 'GET',
+			data : function(d){
+				
+				var oTable = $('#table_id').DataTable();
+				var info = oTable.page.info();
+				var selectedColumn = oTable;
+				
+				/*-------- paging number and showing current data ----------- */
+				d.page = info.page; // get current page
+				d.size = d.length; // show entries
+				
+				/*--------- Sorting Data ------------*/
+				//get index selected order
+				var idxColumn = oTable.order()[0][0];
+				//get type selected order
+				var idxType = oTable.order()[0][1];
+				d.sort = d.columns[idxColumn].data+ ',' + idxType;
+			}
+		},
+		 "columns": [
+	            { "data": "id" },
+	            { "data": "departmentName" },
+	            { "data": "departmentEmail" }
+	        ]
+	});
+});
 ```
 
 ## Referensi
