@@ -28,8 +28,11 @@ public void configurationGlobal(AuthenticationManagerBuilder auth) throws Except
         .password("{noop}1234")
         .roles("admin");
 }
-
 ```
+
+### Handle Controller Route and Role
+
+
 
 ## Reference
 
