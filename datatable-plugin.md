@@ -11,13 +11,33 @@ berikut ini adalah bagaimana mengimplementasikan datatables pada springboot.
 
 ## Repository
 
+```
+
+```
+
 ## Service
+
+```
+
+```
 
 ## Controller
 
+```
+
+```
+
 ## HTML
 
+```
+
+```
+
 ## Javascript
+
+```
+
+```
 
 ## Referensi
 
