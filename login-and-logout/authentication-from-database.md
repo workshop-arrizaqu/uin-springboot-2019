@@ -166,23 +166,27 @@ public class MyUserAppPrincipal implements UserDetails {
 ```java
 @Override
 protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-	// TODO Auto-generated method stub
-	auth.authenticationProvider(getAuthenticationProvider());
+    // TODO Auto-generated method stub
+    auth.authenticationProvider(getAuthenticationProvider());
 }
 
 @Bean
 public DaoAuthenticationProvider getAuthenticationProvider() {
-	DaoAuthenticationProvider dap = new DaoAuthenticationProvider();
-	dap.setUserDetailsService(myUserDetailService);
-	dap.setPasswordEncoder(encoder());
-	return dap;
+    DaoAuthenticationProvider dap = new DaoAuthenticationProvider();
+    dap.setUserDetailsService(myUserDetailService);
+    dap.setPasswordEncoder(encoder());
+    return dap;
 }
 
 @Bean
 public PasswordEncoder encoder() {
     return new BCryptPasswordEncoder(11);
-} 
+}
 ```
+
+## Reference
+
+1. [https://www.baeldung.com/spring-security-authentication-with-a-database](https://www.baeldung.com/spring-security-authentication-with-a-database)
 
 
 
