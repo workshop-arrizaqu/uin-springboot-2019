@@ -5,7 +5,7 @@ for this tutorial, using **UserDetailsService,**
 1. Create User POJO
 2. Create Repository
 3. Create Class Implementation UserDetailService
-4. Create UserDetails Data Return
+4. Create User Principal
 5. Implementation of Spring Configuration
 
 ## User POJO
@@ -71,20 +71,20 @@ import org.springframework.stereotype.Service;
 @Service
 public class MyUserDetailService implements UserDetailsService {
 
-	@Autowired
-	private UserAppRepo userAppRepo;
-	
-	@Override
-	public UserDetails loadUserByUsername(String username) {
-		// TODO Auto-generated method stub
-		UserApp user = userAppRepo.findUserAppByUsername(username);
-		
-		if (user == null) {
+    @Autowired
+    private UserAppRepo userAppRepo;
+
+    @Override
+    public UserDetails loadUserByUsername(String username) {
+        // TODO Auto-generated method stub
+        UserApp user = userAppRepo.findUserAppByUsername(username);
+
+        if (user == null) {
             throw new UsernameNotFoundException(username);
-		}
-		
-		return new MyUserAppPrincipal(user);
-	}
+        }
+
+        return new MyUserAppPrincipal(user);
+    }
 
 }
 ```
