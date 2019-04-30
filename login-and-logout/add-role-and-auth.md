@@ -123,16 +123,16 @@ public interface UserAppRepo extends JpaRepository<UserApp, Integer> {
 
 ## Modify UserApp Principal
 
-```
+```java
 @Override
 public Collection<? extends GrantedAuthority> getAuthorities() {
-	// TODO Auto-generated method stub
-	 //return Collections.singletonList(new SimpleGrantedAuthority("admin"));
-	final List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
-	for (final RoleApp role : this.userApp.getRoles()) {
-		authorities.add(new SimpleGrantedAuthority(role.getName()));
-	}
-	return authorities;
+    // TODO Auto-generated method stub
+     //return Collections.singletonList(new SimpleGrantedAuthority("admin"));
+    final List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
+    for (final RoleApp role : this.userApp.getRoles()) {
+        authorities.add(new SimpleGrantedAuthority(role.getName()));
+    }
+    return authorities;
 }
 ```
 
