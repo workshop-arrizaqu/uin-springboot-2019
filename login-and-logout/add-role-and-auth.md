@@ -109,6 +109,16 @@ public class RoleApp {
 }
 ```
 
+### RoleApp Repository
+
+```java
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface RoleAppRepo extends JpaRepository<RoleApp, Integer>{
+
+}
+```
+
 ## Modify and Add Method JOIN Relation Object
 
 ```java
