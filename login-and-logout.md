@@ -69,15 +69,16 @@ will full script like :
 ```java
 @Override
 protected void configure(HttpSecurity http) throws Exception {
-    // TODO Auto-generated method stub
-    //super.configure(http);
-    http.authorizeRequests()
-        .antMatchers("/department/**").hasRole("admin")
-        .antMatchers("/employee/**").hasRole("child")
-        .anyRequest()
-        .authenticated()
-        .and()
-        .formLogin();
+	// TODO Auto-generated method stub
+	//super.configure(http);
+	http.authorizeRequests()
+		.antMatchers("/department/**").hasRole("admin")
+		.antMatchers("/employee/**").hasRole("child")
+		.antMatchers("/quiz").permitAll()
+		.anyRequest()
+		.authenticated()
+		.and()
+		.formLogin();
 }
 ```
 
