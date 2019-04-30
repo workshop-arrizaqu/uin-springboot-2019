@@ -12,6 +12,7 @@
 * [Searching Data Field](searching-data-field.md)
 * [Datatable Plugin](datatable-plugin.md)
 * [Login and Logout](login-and-logout.md)
+  * [Authentication From Database](login-and-logout/authentication-from-database.md)
 * [Upload Files](upload-files.md)
 * [CRUD Generator](crud-generator.md)
 * [Object Relation](object-relation.md)
