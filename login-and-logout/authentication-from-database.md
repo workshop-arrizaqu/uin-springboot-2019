@@ -53,8 +53,38 @@ public class UserApp {
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserAppRepo extends JpaRepository<UserApp, Integer> {
+
+    public UserApp findUserAppByUsername(String username);
+
+}
+```
+
+## Create UserDetailsService Class
+
+```java
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
+
+@Service
+public class MyUserDetailService implements UserDetailsService {
+
+	@Autowired
+	private UserAppRepo userAppRepo;
 	
-	public UserApp findUserAppByUsername(String username);
+	@Override
+	public UserDetails loadUserByUsername(String username) {
+		// TODO Auto-generated method stub
+		UserApp user = userAppRepo.findUserAppByUsername(username);
+		
+		if (user == null) {
+            throw new UsernameNotFoundException(username);
+		}
+		
+		return new MyUserAppPrincipal(user);
+	}
 
 }
 ```
