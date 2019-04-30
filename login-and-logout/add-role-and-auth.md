@@ -80,34 +80,45 @@ import javax.persistence.Table;
 @Entity
 @Table(name="ROLE_APP")
 public class RoleApp {
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	private int id;
-	private String name;
-	private String note;
-	@ManyToMany
-	private List<UserApp> users;
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getNote() {
-		return note;
-	}
-	public void setNote(String note) {
-		this.note = note;
-	}
-	
-}
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private int id;
+    private String name;
+    private String note;
+    @ManyToMany
+    private List<UserApp> users;
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getNote() {
+        return note;
+    }
+    public void setNote(String note) {
+        this.note = note;
+    }
 
+}
+```
+
+### Modify and Add Method JOIN Relation Object
+
+```java
+public interface UserAppRepo extends JpaRepository<UserApp, Integer> {
+	
+	public UserApp findUserAppByUsername(String username);
+	@Query("select rl from UserApp as ua join ua.roles as rl where ua = ?1")
+	public List<RoleApp> findRolesByUserApp(UserApp userApp);
+
+}
 ```
 
 
