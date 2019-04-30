@@ -151,8 +151,6 @@ public Collection<? extends GrantedAuthority> getAuthorities() {
 ```java
 List<RoleApp> myRoles = this.userAppRepo.findRolesByUserApp(user); 
 user.setRoles(myRoles);
-
-
 ```
 
 modify MyUserDetailsService to load **findRoleByUserApp** because FaceType is Lazy, and set roles before send to MyUserAppPricipal
@@ -170,6 +168,38 @@ public UserDetails loadUserByUsername(String username) {
     }
 
     return new MyUserAppPrincipal(user);
+}
+```
+
+## Saving Data Login
+
+### create Data Login Service
+
+```java
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.uinjakarta.smartweb.security.RoleAppRepo;
+import com.uinjakarta.smartweb.security.UserApp;
+import com.uinjakarta.smartweb.security.UserAppRepo;
+
+@Transactional
+@Service
+public class DataLoginService {
+
+	@Autowired
+	private UserAppRepo userAppRepo;
+	@Autowired
+	private RoleAppRepo roleAppRepo;
+	
+	public void saveUser(UserApp user) {
+		//save user
+		userAppRepo.save(user);
+		//save role
+		roleAppRepo.saveAll(user.getRoles());
+	}
 }
 ```
 
