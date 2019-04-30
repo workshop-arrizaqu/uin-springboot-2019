@@ -171,6 +171,24 @@ public UserDetails loadUserByUsername(String username) {
 }
 ```
 
+## Change HasRole to HasAuthentication
+
+```java
+@Override
+protected void configure(HttpSecurity http) throws Exception {
+	// TODO Auto-generated method stub
+	//super.configure(http);
+	http.authorizeRequests()
+		.antMatchers("/hello").permitAll()
+		.antMatchers("/department/**").hasAuthority("admin")
+		.antMatchers("/employee/**").hasAuthority("user")
+		.anyRequest()
+		.authenticated()
+		.and()
+		.formLogin();
+}
+```
+
 ## Saving Data Login
 
 ### create Data Login Service
@@ -189,17 +207,17 @@ import com.uinjakarta.smartweb.security.UserAppRepo;
 @Service
 public class DataLoginService {
 
-	@Autowired
-	private UserAppRepo userAppRepo;
-	@Autowired
-	private RoleAppRepo roleAppRepo;
-	
-	public void saveUser(UserApp user) {
-		//save user
-		userAppRepo.save(user);
-		//save role
-		roleAppRepo.saveAll(user.getRoles());
-	}
+    @Autowired
+    private UserAppRepo userAppRepo;
+    @Autowired
+    private RoleAppRepo roleAppRepo;
+
+    public void saveUser(UserApp user) {
+        //save user
+        userAppRepo.save(user);
+        //save role
+        roleAppRepo.saveAll(user.getRoles());
+    }
 }
 ```
 
