@@ -109,14 +109,14 @@ public class RoleApp {
 }
 ```
 
-### Modify and Add Method JOIN Relation Object
+## Modify and Add Method JOIN Relation Object
 
 ```java
 public interface UserAppRepo extends JpaRepository<UserApp, Integer> {
-	
-	public UserApp findUserAppByUsername(String username);
-	@Query("select rl from UserApp as ua join ua.roles as rl where ua = ?1")
-	public List<RoleApp> findRolesByUserApp(UserApp userApp);
+
+    public UserApp findUserAppByUsername(String username);
+    @Query("select rl from UserApp as ua join ua.roles as rl where ua = ?1")
+    public List<RoleApp> findRolesByUserApp(UserApp userApp);
 
 }
 ```
