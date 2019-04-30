@@ -176,16 +176,16 @@ public UserDetails loadUserByUsername(String username) {
 ```java
 @Override
 protected void configure(HttpSecurity http) throws Exception {
-	// TODO Auto-generated method stub
-	//super.configure(http);
-	http.authorizeRequests()
-		.antMatchers("/hello").permitAll()
-		.antMatchers("/department/**").hasAuthority("admin")
-		.antMatchers("/employee/**").hasAuthority("user")
-		.anyRequest()
-		.authenticated()
-		.and()
-		.formLogin();
+    // TODO Auto-generated method stub
+    //super.configure(http);
+    http.authorizeRequests()
+        .antMatchers("/hello").permitAll()
+        .antMatchers("/department/**").hasAuthority("admin")
+        .antMatchers("/employee/**").hasAuthority("user")
+        .anyRequest()
+        .authenticated()
+        .and()
+        .formLogin();
 }
 ```
 
@@ -218,6 +218,31 @@ public class DataLoginService {
         //save role
         roleAppRepo.saveAll(user.getRoles());
     }
+}
+```
+
+### InitDb
+
+```java
+public void initUser() {
+    List<RoleApp> roles = new ArrayList<RoleApp>();
+    RoleApp roleApp = new RoleApp();
+    RoleApp roleApp2 = new RoleApp();
+    RoleApp roleApp3 = new RoleApp();
+    roles.add(roleApp);
+    roles.add(roleApp2);
+    roles.add(roleApp3);
+    
+    roleApp.setName("admin");
+    roleApp2.setName("user");
+    roleApp3.setName("operator");
+    
+    UserApp user = new UserApp();
+    user.setUsername("arrizaqu");
+    user.setPassword(new BCryptPasswordEncoder().encode("1234"));
+    user.setRoles(roles);
+    //save to db
+    dataLoginServ.saveUser(user);
 }
 ```
 
