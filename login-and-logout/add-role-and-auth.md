@@ -232,11 +232,11 @@ public void initUser() {
     roles.add(roleApp);
     roles.add(roleApp2);
     roles.add(roleApp3);
-    
+
     roleApp.setName("admin");
     roleApp2.setName("user");
     roleApp3.setName("operator");
-    
+
     UserApp user = new UserApp();
     user.setUsername("arrizaqu");
     user.setPassword(new BCryptPasswordEncoder().encode("1234"));
@@ -245,6 +245,12 @@ public void initUser() {
     dataLoginServ.saveUser(user);
 }
 ```
+
+Reference 
+
+1. [https://stackoverflow.com/questions/31704593/spring-security-authorize-requests-value-from-database](https://stackoverflow.com/questions/31704593/spring-security-authorize-requests-value-from-database)
+
+2. [https://github.com/eugenp/tutorials/blob/master/spring-security-mvc-boot/src/main/java/org/baeldung/custom/security/MyUserPrincipal.java](https://github.com/eugenp/tutorials/blob/master/spring-security-mvc-boot/src/main/java/org/baeldung/custom/security/MyUserPrincipal.java)
 
 
 
