@@ -149,18 +149,27 @@ public Collection<? extends GrantedAuthority> getAuthorities() {
 ## Modify MyUserDetailsService
 
 ```java
+List<RoleApp> myRoles = this.userAppRepo.findRolesByUserApp(user); 
+user.setRoles(myRoles);
+
+
+```
+
+modify MyUserDetailsService to load **findRoleByUserApp** because FaceType is Lazy, and set roles before send to MyUserAppPricipal
+
+```java
 @Override
 public UserDetails loadUserByUsername(String username) {
-	// TODO Auto-generated method stub
-	UserApp user = userAppRepo.findUserAppByUsername(username);
-	List<RoleApp> myRoles = this.userAppRepo.findRolesByUserApp(user);
-	user.setRoles(myRoles);
-	
-	if (user == null) {
+    // TODO Auto-generated method stub
+    UserApp user = userAppRepo.findUserAppByUsername(username);
+    List<RoleApp> myRoles = this.userAppRepo.findRolesByUserApp(user);
+    user.setRoles(myRoles);
+
+    if (user == null) {
             throw new UsernameNotFoundException(username);
-	}
-	
-	return new MyUserAppPrincipal(user);
+    }
+
+    return new MyUserAppPrincipal(user);
 }
 ```
 
