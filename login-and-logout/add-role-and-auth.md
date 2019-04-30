@@ -146,5 +146,23 @@ public Collection<? extends GrantedAuthority> getAuthorities() {
 }
 ```
 
+## Modify MyUserDetailsService
+
+```java
+@Override
+public UserDetails loadUserByUsername(String username) {
+	// TODO Auto-generated method stub
+	UserApp user = userAppRepo.findUserAppByUsername(username);
+	List<RoleApp> myRoles = this.userAppRepo.findRolesByUserApp(user);
+	user.setRoles(myRoles);
+	
+	if (user == null) {
+            throw new UsernameNotFoundException(username);
+	}
+	
+	return new MyUserAppPrincipal(user);
+}
+```
+
 
 
