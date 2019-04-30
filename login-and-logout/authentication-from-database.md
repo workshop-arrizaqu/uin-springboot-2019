@@ -92,7 +92,6 @@ public class MyUserDetailService implements UserDetailsService {
 ## User Principal
 
 ```java
-
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -104,62 +103,85 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 public class MyUserAppPrincipal implements UserDetails {
 
-	private UserApp userApp;
-	
-	public MyUserAppPrincipal(UserApp userApp){
-		this.userApp = userApp;
-	}
-	
-	@Override
-	public Collection<? extends GrantedAuthority> getAuthorities() {
-		// TODO Auto-generated method stub
-		return Collections.singletonList(new SimpleGrantedAuthority("Admin"));
-	}
+    private UserApp userApp;
 
-	@Override
-	public String getPassword() {
-		// TODO Auto-generated method stub
-		return this.userApp.getPassword();
-	}
+    public MyUserAppPrincipal(UserApp userApp){
+        this.userApp = userApp;
+    }
 
-	@Override
-	public String getUsername() {
-		// TODO Auto-generated method stub
-		return this.userApp.getUsername();
-	}
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        // TODO Auto-generated method stub
+        return Collections.singletonList(new SimpleGrantedAuthority("Admin"));
+    }
 
-	@Override
-	public boolean isAccountNonExpired() {
-		// TODO Auto-generated method stub
-		return true;
-	}
+    @Override
+    public String getPassword() {
+        // TODO Auto-generated method stub
+        return this.userApp.getPassword();
+    }
 
-	@Override
-	public boolean isAccountNonLocked() {
-		// TODO Auto-generated method stub
-		return true;
-	}
+    @Override
+    public String getUsername() {
+        // TODO Auto-generated method stub
+        return this.userApp.getUsername();
+    }
 
-	@Override
-	public boolean isCredentialsNonExpired() {
-		// TODO Auto-generated method stub
-		return true;
-	}
+    @Override
+    public boolean isAccountNonExpired() {
+        // TODO Auto-generated method stub
+        return true;
+    }
 
-	@Override
-	public boolean isEnabled() {
-		// TODO Auto-generated method stub
-		return true;
-	}
+    @Override
+    public boolean isAccountNonLocked() {
+        // TODO Auto-generated method stub
+        return true;
+    }
 
-	public UserApp getUserApp() {
-		return userApp;
-	}
+    @Override
+    public boolean isCredentialsNonExpired() {
+        // TODO Auto-generated method stub
+        return true;
+    }
 
-	public void setUserApp(UserApp userApp) {
-		this.userApp = userApp;
-	}
+    @Override
+    public boolean isEnabled() {
+        // TODO Auto-generated method stub
+        return true;
+    }
+
+    public UserApp getUserApp() {
+        return userApp;
+    }
+
+    public void setUserApp(UserApp userApp) {
+        this.userApp = userApp;
+    }
 }
+```
+
+## Spring Security Config
+
+```java
+@Override
+protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+	// TODO Auto-generated method stub
+	auth.authenticationProvider(getAuthenticationProvider());
+}
+
+@Bean
+public DaoAuthenticationProvider getAuthenticationProvider() {
+	DaoAuthenticationProvider dap = new DaoAuthenticationProvider();
+	dap.setUserDetailsService(myUserDetailService);
+	dap.setPasswordEncoder(encoder());
+	return dap;
+}
+
+@Bean
+public PasswordEncoder encoder() {
+    return new BCryptPasswordEncoder(11);
+} 
 ```
 
 
