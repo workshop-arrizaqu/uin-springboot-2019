@@ -13,8 +13,8 @@
 * [Datatable Plugin](datatable-plugin.md)
 * [Login and Logout](login-and-logout.md)
   * [Authentication From Database](login-and-logout/authentication-from-database.md)
-  * Privillage Authentication
-  * Authentication OAuth2
+  * [Authentication OAuth2](login-and-logout/authentication-oauth2.md)
+  * [Add Role and Auth](login-and-logout/add-role-and-auth.md)
 * [Upload Files](upload-files.md)
 * [CRUD Generator](crud-generator.md)
 * [Object Relation](object-relation.md)
