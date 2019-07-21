@@ -35,7 +35,7 @@
   * kubernates
 * [Kafka](kafka.md)
 * Reporting
-  * PDF
+  * [PDF](pdf.md)
   * Excel
   * Ijasper Report
 * Testing
