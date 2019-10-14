@@ -6,9 +6,10 @@
 * [Hello World](hello-world.md)
 * [Quiz Logika](quiz-logika.md)
 * [Jawaban Quiz](quiz-logika/jawaban-quiz.md)
+* [Database Connection](database-connection.md)
 * [Spring MVC](spring-mvc.md)
 * [CRUD Data Form](data-form.md)
-* [Pagination](pagination.md)
+* Database Connection
 * [Searching Data Field](searching-data-field.md)
 * [Datatable Plugin](datatable-plugin.md)
   * [Dandelion Datatable](datatable-plugin/dandelion-datatable.md)
@@ -21,7 +22,7 @@
 * [CRUD Generator](crud-generator.md)
 * [Object Relation](object-relation.md)
 * [Master Detail](master-detail.md)
-* Call Store Procedure
+* [Call Store Procedure](call-store-procedure.md)
 * Custome Query
 * [API](api.md)
   * RestFull
