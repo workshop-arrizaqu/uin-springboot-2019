@@ -246,11 +246,13 @@ public void initUser() {
 }
 ```
 
-Reference 
+Reference
 
 1. [https://stackoverflow.com/questions/31704593/spring-security-authorize-requests-value-from-database](https://stackoverflow.com/questions/31704593/spring-security-authorize-requests-value-from-database)
 
 2. [https://github.com/eugenp/tutorials/blob/master/spring-security-mvc-boot/src/main/java/org/baeldung/custom/security/MyUserPrincipal.java](https://github.com/eugenp/tutorials/blob/master/spring-security-mvc-boot/src/main/java/org/baeldung/custom/security/MyUserPrincipal.java)
+
+3. [https://stackoverflow.com/questions/9910252/how-to-reload-authorities-on-user-update-with-spring-security](https://stackoverflow.com/questions/9910252/how-to-reload-authorities-on-user-update-with-spring-security)
 
 
 
