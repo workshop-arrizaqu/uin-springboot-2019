@@ -30,7 +30,8 @@
   * RGPC
 * WebFlux
 * JWT
-* Deployment
+* [Deployment](deployment.md)
+  * [Install Tomcat](deployment/install-tomcat.md)
 * [DevOps](devops.md)
   * [Docker](devops/docker.md)
   * [Countinous Integration CI](devops/countinous-integration-ci.md)
@@ -44,7 +45,7 @@
   * Excel
   * Ijasper Report
 * Testing
-* Microservice
+* [Microservice](microservice.md)
   * Spring Cloud
   * Eurika
   * Zookepper
