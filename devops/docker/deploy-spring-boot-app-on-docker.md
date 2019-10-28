@@ -3,10 +3,13 @@
 * Create Application Spring Boot war
 
 * Create Account hub.docker
+
 * Pull Docker Image Tomcat from Docker Hub
+
 * Extract War File and Create DockerFile
-* Create Docker Container
-* 
+* Create Docker Container and start Service
+* View Detail Docker with Docker Exec
+
 
 
 
