@@ -48,15 +48,33 @@ sudo systemctl start docker.service
 
 #### 1. Install Extra Packages for Enterprise Linux
 
+```
 
+```
 
 #### 2. Install python-pip
 
-#### 3. Install Docker Compose:
+```
+
+```
+
+#### 3. Install Docker Compose
+
+```
+
+```
 
 #### 4. Upgrade Python packages on CentOS 7
 
+```
+
+```
+
 #### 5. To verify a successful Docker Compose installation
+
+```
+
+```
 
 ## Reference
 
