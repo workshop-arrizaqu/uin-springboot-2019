@@ -34,6 +34,7 @@
   * [Install Tomcat](deployment/install-tomcat.md)
 * [DevOps](devops.md)
   * [Docker](devops/docker.md)
+    * [Deploy Spring Boot App on Docker](devops/docker/deploy-spring-boot-app-on-docker.md)
   * [Countinous Integration CI](devops/countinous-integration-ci.md)
   * kubernates
 * [Messaging](kafka.md)
