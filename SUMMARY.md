@@ -43,11 +43,12 @@
   * Kaffka
 * Reporting
   * [PDF](pdf.md)
-  * Excel
-  * Ijasper Report
+  * [Excel](excel.md)
+  * [Ijasper Report](ijasper-report.md)
 * Testing
 * [Microservice](microservice.md)
   * Spring Cloud
   * Eurika
   * Zookepper
+* [Implement SSL](implement-ssl.md)
 
