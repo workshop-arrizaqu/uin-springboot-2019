@@ -1,5 +1,7 @@
 # SSL Configuration
 
+[https://geekflare.com/tomcat-ssl-guide/](https://geekflare.com/tomcat-ssl-guide/)
+
 ## Example
 
 ```
@@ -7,7 +9,6 @@
 Enter keystore password:
 Re-enter new password:
 What is your first and last name?
-  [Unknown]:  mosstaging.dwidayatour.co.id
 What is the name of your organizational unit?
   [Unknown]:  tour and travel
 What is the name of your organization?
@@ -17,10 +18,7 @@ What is the name of your City or Locality?
 What is the name of your State or Province?
   [Unknown]:  DKI Jakarta
 What is the two-letter country code for this unit?
-  [Unknown]:  62
 Is CN=mosstaging.dwidayatour.co.id, OU=tour and travel, O=dwidaya tour, L=north of jakarta, ST=DKI Jakarta, C=62 correct?
-  [no]:  yes
-
 Enter key password for <mosstaging.dwidayatour>
         (RETURN if same as keystore password):
 Re-enter new password:
@@ -109,7 +107,6 @@ keytool error: java.security.cert.CertificateParsingException: java.io.IOExcepti
 AddTrustExternalCARoot.crt                    SectigoRSADomainValidationSecureServerCA.crt  USERTrustRSAAddTrustCA.crt
 dwidaya.jks                                   STAR_dwidayatour_co_id.crt
 [root@mos-dev ssl]# chmod 775 /home/dtadmin/ssl/dwidaya.jks
-
 ```
 
 
