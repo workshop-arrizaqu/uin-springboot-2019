@@ -76,7 +76,24 @@ sudo yum upgrade python*
 docker-compose version
 ```
 
+## ================= OTHER INSTALL DOCKER COMPOSE ========
+
+
+
+```
+[root@localhost arrizaqu]# sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compoose
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   617    0   617    0     0    669      0 --:--:-- --:--:-- --:--:--   669
+100 11.2M  100 11.2M    0     0   466k      0  0:00:24  0:00:24 --:--:--  721k
+[root@localhost arrizaqu]# sudo chmod +x /usr/local/bin/docker-compose
+[root@localhost arrizaqu]# docker-compose --version
+docker-compose version 1.23.2, build 1110ad01
+```
+
 ## Reference
 
 [https://github.com/NaturalHistoryMuseum/scratchpads2/wiki/Install-Docker-and-Docker-Compose-\(Centos-7\)](https://github.com/NaturalHistoryMuseum/scratchpads2/wiki/Install-Docker-and-Docker-Compose-%28Centos-7%29)
+
+[https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-centos-7](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-centos-7)
 
