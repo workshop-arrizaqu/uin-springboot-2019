@@ -78,6 +78,20 @@ docker-compose version
 
 ## ================= OTHER INSTALL DOCKER COMPOSE ========
 
+Add repository
+
+```
+sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+```
+
+Grant to execute service
+
+```
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+Check version
+
 
 
 ```
