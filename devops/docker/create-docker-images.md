@@ -7,6 +7,8 @@
   * Build Image
   * Build Image by Name
 * Test Run Image
+* Remove Image
+* Remove All Image
 
 ## Check Docker version
 
