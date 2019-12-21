@@ -125,7 +125,32 @@ alpine              latest              c85b8f829d1f        26 hours ago        
 hello docker image
 ```
 
+### Remove Image
 
+> docker rmi &lt;imagename&gt;
+>
+> docker rmi &lt;imagename&gt; --force
+
+```
+[root@localhost docker-images]# docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED              SIZE
+helloworld          latest              2adb1b969a6e        About a minute ago   5.59MB
+alpine              latest              c85b8f829d1f        26 hours ago         5.59MB
+[root@localhost docker-images]# docker rmi helloworld
+Error response from daemon: conflict: unable to remove repository reference "helloworld" (must force) - container d8d90578180a is using its referenced image 2adb1b969a6e
+[root@localhost docker-images]# docker rm test
+test
+[root@localhost docker-images]# docker rmi helloworld
+Untagged: helloworld:latest
+Deleted: sha256:2adb1b969a6edb2e82f75d33178d74e8d419ea1f0ac4fe7fbb3fd35fa5754b8f
+[root@localhost docker-images]# docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+alpine              latest              c85b8f829d1f        26 hours ago        5.59M
+```
+
+Remove All Image
+
+> docker system prune
 
 
 
