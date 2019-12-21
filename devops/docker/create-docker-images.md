@@ -151,8 +151,14 @@ alpine              latest              c85b8f829d1f        26 hours ago        
 Remove All Image
 
 > docker system prune   //for not active image
-
+>
 > docker system prune -a //remove all images
+
+
+
+## Reference
+
+1. [https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes)
 
 
 
