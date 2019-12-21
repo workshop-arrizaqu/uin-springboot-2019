@@ -150,7 +150,9 @@ alpine              latest              c85b8f829d1f        26 hours ago        
 
 Remove All Image
 
-> docker system prune
+> docker system prune   //for not active image
+
+> docker system prune -a //remove all images
 
 
 
