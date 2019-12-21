@@ -50,5 +50,23 @@ docker images
 
 ### Create Docker File
 
+```
+[root@localhost arrizaqu]# mkdir docker-images
+[root@localhost arrizaqu]# cd docker-images
+[root@localhost docker-images]# ls
+[root@localhost docker-images]# touch DockerFile
+[root@localhost docker-images]# vi DockerFile
+```
+
+#### Edit Dockerfile : 
+
+```
+FROM alpine
+
+CMD ["echo","hello docker image"]
+```
+
+Build Image
+
 
 
