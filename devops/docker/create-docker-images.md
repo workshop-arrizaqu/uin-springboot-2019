@@ -90,5 +90,21 @@ Removing intermediate container 1b0d3a569eba
 Successfully built 0ce1bec6b524
 ```
 
+Build Image by Name
+
+> docker build -t helloworld .
+
+```
+[root@localhost docker-images]# docker build -t helloworld .
+Sending build context to Docker daemon  2.048kB
+Step 1/2 : FROM alpine
+ ---> c85b8f829d1f
+Step 2/2 : CMD ["echo","hello docker image"]
+ ---> Using cache
+ ---> 5c12e43154a9
+Successfully built 5c12e43154a9
+Successfully tagged helloworld:latest
+```
+
 
 
