@@ -6,6 +6,7 @@
   * Create Docker file
   * Build Image
   * Build Image by Name
+* Test Run Image
 
 ## Check Docker version
 
