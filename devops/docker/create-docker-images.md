@@ -58,7 +58,7 @@ docker images
 [root@localhost docker-images]# vi DockerFile
 ```
 
-#### Edit Dockerfile : 
+#### Edit Dockerfile :
 
 ```
 FROM alpine
@@ -66,7 +66,29 @@ FROM alpine
 CMD ["echo","hello docker image"]
 ```
 
-Build Image
+### Build Image
+
+> docker build .
+
+```
+[root@localhost docker-images]# docker build .
+Sending build context to Docker daemon  2.048kB
+Step 1/2 : FROM alpine
+ ---> c85b8f829d1f
+Step 2/2 : CMD ["echo","hello docker image"]
+ ---> Running in 1b0d3a569eba
+Removing intermediate container 1b0d3a569eba
+ ---> 0ce1bec6b524
+Successfully built 0ce1bec6b524[root@localhost docker-images]# docker build .
+Sending build context to Docker daemon  2.048kB
+Step 1/2 : FROM alpine
+ ---> c85b8f829d1f
+Step 2/2 : CMD ["echo","hello docker image"]
+ ---> Running in 1b0d3a569eba
+Removing intermediate container 1b0d3a569eba
+ ---> 0ce1bec6b524
+Successfully built 0ce1bec6b524
+```
 
 
 
