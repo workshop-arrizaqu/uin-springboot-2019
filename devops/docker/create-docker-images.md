@@ -93,7 +93,7 @@ Removing intermediate container 1b0d3a569eba
 Successfully built 0ce1bec6b524
 ```
 
-Build Image by Name
+### Build Image by Name
 
 > docker build -t helloworld .
 
@@ -108,6 +108,17 @@ Step 2/2 : CMD ["echo","hello docker image"]
 Successfully built 5c12e43154a9
 Successfully tagged helloworld:latest
 ```
+
+#### show all images
+
+```
+[root@localhost docker-images]# docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+helloworld          latest              5c12e43154a9        9 minutes ago       5.59MB
+alpine              latest              c85b8f829d1f        26 hours ago        5.59MB
+```
+
+
 
 
 
