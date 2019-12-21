@@ -118,6 +118,13 @@ helloworld          latest              5c12e43154a9        9 minutes ago       
 alpine              latest              c85b8f829d1f        26 hours ago        5.59MB
 ```
 
+### Test Run Image
+
+```
+[root@localhost docker-images]# docker run --name test helloworld
+hello docker image
+```
+
 
 
 
