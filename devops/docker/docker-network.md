@@ -24,7 +24,7 @@ Create Static IP Docker Network
 
 example : 
 - docker connect network --ip=172.15.0.23 java_net app1
-- docker connect network --ip=172.15.0.25 java_net app2 
+- docker connect network --ip=172.15.0.25 java_net app2
 ```
 
 
