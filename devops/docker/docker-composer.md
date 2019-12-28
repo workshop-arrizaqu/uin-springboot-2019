@@ -24,6 +24,10 @@ sudo yum install docker-composer
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
+```
+docker-compose --version
+```
+
 ### Docker Composer File
 
 ### Docker Argument
