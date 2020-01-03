@@ -25,11 +25,11 @@
 * [Call Store Procedure](call-store-procedure.md)
 * Custome Query
 * [API](api.md)
-  * RestFull
-  * SoapXML
-  * RGPC
-* WebFlux
-* JWT
+  * [RestFull](api/restfull.md)
+  * [SoapXML](api/soapxml.md)
+  * [RGPC](api/rgpc.md)
+* [WebFlux](webflux.md)
+* [JWT](jwt.md)
 * [Deployment](deployment.md)
   * [Install Tomcat](deployment/install-tomcat.md)
 * [DevOps](devops.md)
