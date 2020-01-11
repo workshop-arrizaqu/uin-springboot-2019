@@ -14,7 +14,7 @@ spring.security.user.name=arrizaqu
 spring.security.user.password=1234
 ```
 
-## Configure Basic Authentication
+## Configure Basic Authentication \(\*AuthenticationManagerBuilder\)
 
 ```
 @Configuration
@@ -52,7 +52,7 @@ public UserDetailsService users() {
 }
 ```
 
-## Configure Basic Authorization
+## Configure Basic Authorization \(HttpSecurity\)
 
 ```
 @Override
