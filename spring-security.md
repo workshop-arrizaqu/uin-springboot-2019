@@ -11,7 +11,6 @@
 
 spring.security.user.name=arrizaqu
 spring.security.user.password=1234
-
 ```
 
 ## Login Form Basic
@@ -24,7 +23,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
-                .withUser("arrizaqu").password("{noop}pensil").roles("user");
+                .withUser("arrizaqu").password("cangkir").roles("user")
+                .and()
+                .withUser("sofia").password("tanisha").roles("admin");
     }
 
     @Override
@@ -32,6 +33,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 .antMatchers("/**")
                 .hasRole("user").and().formLogin();
+    }
+
+    @Bean
+    public PasswordEncoder getPasswordEncoder(){
+        return NoOpPasswordEncoder.getInstance();
     }
 }
 
