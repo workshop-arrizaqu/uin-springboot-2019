@@ -1,11 +1,20 @@
-# Secure Application with Spring Security
+## Secure Application with Spring Security
 
 * basic security
-* custome login page
-
-
+* login form basic
+* custom login form
 
 ## Basic Security
+
+```
+//add username password @application.properties
+
+spring.security.user.name=arrizaqu
+spring.security.user.password=1234
+
+```
+
+## Login Form Basic
 
 ```
 @Configuration
