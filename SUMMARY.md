@@ -13,6 +13,7 @@
 * [Searching Data Field](searching-data-field.md)
 * [Datatable Plugin](datatable-plugin.md)
   * [Dandelion Datatable](datatable-plugin/dandelion-datatable.md)
+* [Spring Security](spring-security.md)
 * [Login and Logout](login-and-logout.md)
   * [Authentication From Database](login-and-logout/authentication-from-database.md)
   * [Add Role and Auth](login-and-logout/add-role-and-auth.md)
