@@ -56,11 +56,14 @@ public UserDetailsService users() {
 
 ```
 @Override
-protected void configure(HttpSecurity http) throws Exception {
-http.authorizeRequests()
-.antMatchers("/**")
-.hasRole("user").and().formLogin();
-}
+    protected void configure(HttpSecurity http) throws Exception {
+        http.authorizeRequests()
+                .antMatchers("/rest/admin").hasRole("admin")
+                .antMatchers("/rest/user").hasRole("user")
+                .antMatchers("/").permitAll()
+                .and()
+                .formLogin();
+    }
 ```
 
 
