@@ -2,6 +2,7 @@
 
 * basic security
 * configure basic authentication
+* configure basic authorization
 * custom login form
 
 ## Basic Security
@@ -28,13 +29,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .withUser("sofia").password("tanisha").roles("admin");
     }
 
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
-                .antMatchers("/**")
-                .hasRole("user").and().formLogin();
-    }
-
     @Bean
     public PasswordEncoder getPasswordEncoder(){
         return NoOpPasswordEncoder.getInstance();
@@ -55,6 +49,17 @@ public UserDetailsService users() {
         .roles("USER", "ADMIN")
         .build();
     return new InMemoryUserDetailsManager(user, admin);
+}
+```
+
+## Configure Basic Authorization
+
+```
+@Override
+protected void configure(HttpSecurity http) throws Exception {
+http.authorizeRequests()
+.antMatchers("/**")
+.hasRole("user").and().formLogin();
 }
 ```
 
