@@ -16,10 +16,12 @@ spring.datasource.password=
 ## Postgresql
 
 ```
-
-spring.datasource.url= jdbc:postgresql://localhost:5432/springbootdb 
-spring.datasource.username=postgres spring.datasource.password=postgres@123   
-spring.jpa.hibernate.ddl-auto=create-drop
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto=create
+spring.jpa.hibernate.show-sql=true
+spring.datasource.url=jdbc:postgresql://localhost:5432/myauth
+spring.datasource.username=postgres
+spring.datasource.password=
 ```
 
 ## Oracle
