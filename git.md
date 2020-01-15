@@ -39,6 +39,10 @@ git tag -a tagName -m "comment create tag"
 
 ### Push Remote Tag
 
+```
+git push --tag
+```
+
 ### Delete Remote Tag
 
 ### Delete Local Tag
