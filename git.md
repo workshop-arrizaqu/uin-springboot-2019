@@ -31,7 +31,15 @@ git clone URL_ADDRESS
 
 ## Remote
 
+```
+ git remote add origin URL_ADDRESS
+```
+
 ## Pull
+
+```
+git pull origin master
+```
 
 ## Merge
 
