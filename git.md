@@ -19,7 +19,15 @@
 
 ## Initialization
 
+```
+git init
+```
+
 ## Clone
+
+```
+git clone URL_ADDRESS
+```
 
 ## Remote
 
