@@ -45,7 +45,15 @@ git push --tag
 
 ### Delete Remote Tag
 
+```
+git push --delete origin tagName
+```
+
 ### Delete Local Tag
+
+```
+git tag -d tagName
+```
 
 
 
