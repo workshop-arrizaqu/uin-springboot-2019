@@ -3,7 +3,8 @@
 1. initialization
 2. clone
 3. Remote
-4. ### pushc
+4. push
+
 5. pull
 6. merge
 7. branch
