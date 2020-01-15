@@ -33,13 +33,15 @@
 
 ### Create local tag
 
+```
+git tag -a tagName -m "comment create tag"
+```
+
 ### Push Remote Tag
 
 ### Delete Remote Tag
 
 ### Delete Local Tag
-
-
 
 
 
