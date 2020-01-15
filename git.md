@@ -59,11 +59,15 @@ git push origin branchName
 
 ### Delete remote branch
 
-git push --delete branchName
+```
+git push origin --delete branchName
+```
 
 ### Delete local branch
 
+```
 git push -d branchName
+```
 
 ## Tag
 
