@@ -3,7 +3,7 @@
 1. initialization
 2. clone
 3. Remote
-4. push
+4. ### pushc
 5. pull
 6. merge
 7. branch
@@ -23,8 +23,6 @@
 
 ## Remote
 
-
-
 ## Pull
 
 ## Merge
@@ -32,6 +30,16 @@
 ## Branch
 
 ## Tag
+
+### Create local tag
+
+### Push Remote Tag
+
+### Delete Remote Tag
+
+### Delete Local Tag
+
+
 
 
 
