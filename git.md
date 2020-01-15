@@ -45,6 +45,26 @@ git pull origin master
 
 ## Branch
 
+### Create local branch
+
+```
+git branch branchName
+```
+
+### Create remote branch
+
+```
+git push origin branchName
+```
+
+### Delete remote branch
+
+git push --delete branchName
+
+### Delete local branch
+
+git push -d branchName
+
 ## Tag
 
 ### Create local tag
