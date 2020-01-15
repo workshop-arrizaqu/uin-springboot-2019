@@ -17,15 +17,13 @@
    3. delete remote tag
    4. delete local tag
 
-
-
 ## Initialization
 
 ## Clone
 
 ## Remote
 
-## Push
+
 
 ## Pull
 
