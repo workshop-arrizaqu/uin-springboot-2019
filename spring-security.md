@@ -3,7 +3,9 @@
 * basic security
 * configure basic authentication
 * configure basic authorization
-* custom login form
+* jdbc authentication
+  * create schema and data
+* custome form login
 
 ## Basic Security
 
@@ -65,6 +67,10 @@ public UserDetailsService users() {
                 .formLogin();
     }
 ```
+
+## Jdbc Authentication
+
+
 
 
 
