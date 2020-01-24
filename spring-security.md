@@ -4,7 +4,8 @@
 * configure basic authentication
 * configure basic authorization
 * jdbc authentication
-  * create schema and data
+  * configure auth
+* * create schema and data
 * custome form login
 
 ## Basic Security
@@ -69,6 +70,18 @@ public UserDetailsService users() {
 ```
 
 ## Jdbc Authentication
+
+### Configure Auth
+
+```
+
+```
+
+### Create schema and data
+
+```
+
+```
 
 
 
