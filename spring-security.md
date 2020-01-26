@@ -7,7 +7,8 @@
   * configure auth
 * * create schema and data
   * schema and POJO
-
+    * users pojo
+    * authorities pojo
 * custome form login
 
 ## Basic Security
