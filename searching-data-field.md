@@ -12,8 +12,8 @@ import com.uinjakarta.smartweb.model.Department;
 
 public interface DepartmentRepo extends JpaRepository<Department, Integer> {
 
-	@Query("select dept from Department dept where dept.departmentName like %?1%")
-	public Page findAllBySearchInput(String deptName, Pageable pageable);
+    @Query("select dept from Department dept where dept.departmentName like %?1%")
+    public Page findAllBySearchInput(String deptName, Pageable pageable);
 }
 ```
 
