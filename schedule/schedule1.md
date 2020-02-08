@@ -2,7 +2,7 @@
 
 * spesific time
 
-```
+```java
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -32,7 +32,6 @@ public class ExamSchedule2 {
         //timer.schedule(new MyTimeTask(), date, period );
     }
 }
-
 ```
 
 * in periodic time
