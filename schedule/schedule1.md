@@ -1,4 +1,4 @@
-# Schedule
+# Scheduler
 
 * spesific time
 
@@ -57,7 +57,6 @@ public class ExamSchedule {
     }
 
 }
-
 ```
 
 
