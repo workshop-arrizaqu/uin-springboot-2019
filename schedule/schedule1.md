@@ -36,5 +36,29 @@ public class ExamSchedule2 {
 
 * in periodic time
 
+```java
+public class ExamSchedule {
+
+    public static void main(String[] args) {
+        runningTask();
+    }
+
+    private static final ScheduledExecutorService scheduler =
+            Executors.newScheduledThreadPool(1);
+
+    public static void runningTask(){
+
+        Runnable beeper = () -> System.out.println("beep");
+        RunnableScheduledFuture<?> beeperHandle =
+               (RunnableScheduledFuture<?>) scheduler.scheduleAtFixedRate(beeper, 0, 60, SECONDS);
+        beeperHandle.cancel(false);
+        Runnable canceller = () -> beeperHandle.cancel(false);
+        scheduler.schedule(canceller, 61, SECONDS);
+    }
+
+}
+
+```
+
 
 
