@@ -1,2 +1,2 @@
-[https://phoenixnap.com/kb/how-to-setup-ftp-server-install-vsftpd-centos-7](https://phoenixnap.com/kb/how-to-setup-ftp-server-install-vsftpd-centos-7)
+[https://www.howtoforge.com/tutorial/how-to-setup-an-sftp-server-on-centos/](https://www.howtoforge.com/tutorial/how-to-setup-an-sftp-server-on-centos/)
 

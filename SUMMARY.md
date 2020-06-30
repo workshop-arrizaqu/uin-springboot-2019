@@ -60,6 +60,7 @@
 * [git](git.md)
 * [schedule](schedule.md)
   * [schedule1](schedule/schedule1.md)
-* Transfer File
+* [Transfer File](transfer-file.md)
   * [sFTP](sftp.md)
+  * [FTP](ftp.md)
 
