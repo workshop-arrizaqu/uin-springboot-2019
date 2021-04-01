@@ -24,7 +24,7 @@
 * [Object Relation](object-relation.md)
 * [Master Detail](master-detail.md)
 * [Call Store Procedure](call-store-procedure.md)
-* Custome Query
+* [Custome Query](custome-query.md)
 * [API](api.md)
   * [RestFull](api/restfull.md)
   * [SoapXML](api/soapxml.md)
