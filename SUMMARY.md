@@ -39,6 +39,7 @@
     * [Create Docker Images](devops/docker/create-docker-images.md)
     * [Docker Network](devops/docker/docker-network.md)
     * [Docker Composer](devops/docker/docker-composer.md)
+    * [Practice](devops/docker/practice.md)
   * [Countinous Integration CI](devops/countinous-integration-ci.md)
   * kubernates
 * [Messaging](kafka.md)
